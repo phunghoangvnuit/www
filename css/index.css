@@ -1,0 +1,49 @@
+.block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.block .item {
+  background: #a7d9a7;
+  height: 150px;
+}
+.block .sponsor {
+  background: #f4c542;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.quote {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #aaa;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Carousel */
+.carousel-inner{
+  height: 350px;
+  margin-bottom: 25px;
+}
+
+.carousel-inner img{
+  object-fit: cover;
+}
+
+/* Card */
+.card img{
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Responsive: kích thước điện thoại */
+@media (max-width: 700px){
+  .block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
