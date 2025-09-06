@@ -24,7 +24,31 @@
   font-style: italic;
 }
 
-/* Carousel */
+/* Bootstrap NavBar */
+.navbar{
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-between; /* chia đều */
+}
+
+.navbar-nav .nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-nav .nav-link {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 16px; 
+}
+
+/* Bootstrap Carousel */
 .carousel-inner{
   height: 350px;
   margin-bottom: 25px;
