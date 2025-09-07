@@ -1,0 +1,156 @@
+.top{
+  display: flex;
+  flex-direction: column;
+  padding: 0 21px;
+}
+
+.top-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 21px 0;
+}
+
+.top-navbar .logo{
+    margin: 0;
+}
+
+/* Content-container */
+.content-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.content-container .body-left{
+  padding: 0 28px 0 0;
+}
+.content-container .body-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body-right h1{
+  width: 714px;
+  font-size: 35px;
+  text-align: center;
+}
+.body-right .content-info{
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
+.body-right .content-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 800px;
+}
+.body-right .content-body p{
+  margin: 21px 0;
+}
+
+/* Social-sharing */
+.social-sharing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 10px;
+}
+.sharing-icon{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.sharing-icon a{
+  width: 42px;
+  height: 42px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mặc định: ẩn thanh search pc trên màn hình nhỏ */
+.pc-search{
+  gap: 8px;
+}
+.pc-search input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.pc-search button{
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive: kích thước điện thoại */
+@media (max-width: 1068px){
+  .body-left { display: none; }
+}
+@media (max-width: 768px){
+  .pc-search { display: none; }
+  .mobile-search{ display: flex; }  /* Hiện thanh mobile-search */
+  .body-right h1{
+    font-size: 24px;
+    width: 567px;
+  }
+  .body-right .content-info{
+    font-size: 14px;
+  }
+  .body-right .content-body{
+    font-size: 14px;
+    width: 550px;
+  }
+  .body-right .content-body{
+    width: 550px;
+  }
+}
+@media (max-width: 468px){
+  .body-right h1{
+    font-size: 18px;
+    width: 322px;
+  }
+  .body-right .content-info{
+    font-size: 12px;
+  }
+  .body-right .content-body{
+    font-size: 12px;
+    width: 350px;
+  }
+  .body-right .content-body img{
+    width: 350px;
+  }
+}
+@media (max-width: 428px){
+  .body-right h1{
+    font-size: 16px;
+    width: 322px;
+  }
+  .body-right .content-info{
+    font-size: 12px;
+  }
+  .body-right .content-body{
+    font-size: 12px;
+    width: 320px;
+  }
+  .body-right .content-body img{
+    width: 320px;
+  }
+}
+
