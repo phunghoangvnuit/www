@@ -13,7 +13,10 @@
 body {
   min-height: 100vh;
   background: #efece8;
-  /* background-image: url("../img//background-image.jpg"); */
+  background-image: url("../img//background-image.png");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 .top{
   display: flex;
@@ -100,15 +103,17 @@ background: #333;
   padding: 20px;
 }
 .search-box {
-  display: flex;
   margin-bottom: 20px;
 }
 .search-box input {
   flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
   font-size: 12px;
+}
+.search-box button{
+  border-radius: 20px;
 }
 
 .sidebar-box {
@@ -125,21 +130,16 @@ background: #333;
 .mobile-search{
   display: none;
   gap: 8px;
-  margin: 12px 0 20px;
 }
 .mobile-search input{
   flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 20px;
+  font-size: 12px;
 }
 .mobile-search button{
-  padding: 10px 14px;
-  border: 0;
-  border-radius: 6px;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+  border-radius: 20px;
 }
 
 .bottom{
@@ -150,5 +150,5 @@ background: #333;
 @media (max-width: 768px){
   .right{ display: none; }      /* Ẩn cột phải */
   .left{ width: 100%; }         /* Cột trái chiếm full */
-  .mobile-search{ display: flex; }  /* Hiện thanh search ở cột trái */
+  .mobile-search{ display: initial; }  /* Hiện thanh search ở cột trái */
 }

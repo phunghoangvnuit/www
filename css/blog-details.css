@@ -52,6 +52,22 @@
 .body-right .content-body p{
   margin: 21px 0;
 }
+.body-right .content-body .affiliate{
+  display: flex;
+  flex-direction: row;
+}
+.affiliate button{
+  margin-right: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #a54;
+  color: #fff;
+  cursor: pointer;
+}
+.affiliate button:hover{
+  background: #833;
+}
 
 /* Social-sharing */
 .social-sharing{
@@ -62,9 +78,10 @@
   width: fit-content;
   padding: 10px 20px;
   border: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-color: lightgray;
   border-radius: 10px;
+  background-color: white;
 }
 .sharing-icon{
   display: flex;
@@ -80,32 +97,13 @@
   justify-content: center;
 }
 
-/* Mặc định: ẩn thanh search pc trên màn hình nhỏ */
-.pc-search{
-  gap: 8px;
-}
-.pc-search input{
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-.pc-search button{
-  padding: 10px 14px;
-  border: 0;
-  border-radius: 6px;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
 /* Responsive: kích thước điện thoại */
 @media (max-width: 1068px){
   .body-left { display: none; }
 }
 @media (max-width: 768px){
-  .pc-search { display: none; }
-  .mobile-search{ display: flex; }  /* Hiện thanh mobile-search */
+  .search-box { display: none; }
+  .mobile-search{ display: initial; }  /* Hiện thanh mobile-search */
   .body-right h1{
     font-size: 24px;
     width: 567px;
