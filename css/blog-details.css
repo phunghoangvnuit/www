@@ -61,12 +61,14 @@
   padding: 10px 16px;
   border: none;
   border-radius: 4px;
-  background: #a54;
+  background: var(--primary);
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .affiliate button:hover{
-  background: #833;
+  background: var(--light);
+  color: var(--primary);
 }
 
 /* Social-sharing */

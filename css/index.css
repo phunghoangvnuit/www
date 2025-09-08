@@ -4,18 +4,6 @@
   gap: 15px;
   margin-bottom: 30px;
 }
-.block .item {
-  background: #a7d9a7;
-  height: 150px;
-}
-.block .sponsor {
-  background: #f4c542;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
 .quote {
   text-align: center;
   padding: 30px;
@@ -40,6 +28,14 @@
 .card img{
   height: 200px;
   object-fit: cover;
+}
+.card .btn{
+  background: var(--primary) !important;
+  border: var(--primary) !important;
+  color: var(--light) !important;
+}
+.card .btn:focus{
+  border: var(--primary) !important;
 }
 
 /* Responsive: kích thước điện thoại */
