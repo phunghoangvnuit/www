@@ -16,8 +16,8 @@
 }
 body {
   min-height: 100vh;
-  background: #efece8;
-  background-image: url("../img//background-image.png");
+  /* background: #efece8; */
+  /* background-image: url("../img//background-image.png"); */
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -147,12 +147,6 @@ background: #333;
 
 .bottom{
   margin-top: 35px;
-}
-.bottom .footer{
-  background: var(--primary) !important;
-}
-.bottom .footer a:hover{
-  color: var(--light) !important;
 }
 
 /* Responsive: kích thước điện thoại */

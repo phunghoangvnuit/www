@@ -1,4 +1,3 @@
-/* Footer */
 /*Style chung*/
 .footer{
     display: flex;
@@ -113,7 +112,6 @@
     align-items: center;
     justify-content: center;
     margin: 21px 0;
-    text-align: center;
 }
 
 /* ======= Responsive ======= */
@@ -132,6 +130,7 @@
     flex-direction: row;
   }
 }
+
 
 
 
