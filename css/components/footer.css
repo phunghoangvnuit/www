@@ -1,5 +1,5 @@
 /* Footer */
-/*Style chung*/
+/* ======= Style chung ======= */
 .footer{
     display: flex;
     flex-direction: column;
@@ -69,31 +69,21 @@
     flex-direction: column;
     gap: 10px;
 }
-/*Footer cột 3*/
-.latest-news .news-items{
+
+/*Footer cột 3 + 4*/
+.news-items{
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 12px;
+    margin-bottom: 16px;
 }
-.latest-news .badge{
+.news-items .badge{
     font-size: 10px;
     margin-right: 5px;
 }
 
-/*Footer cột 4*/
-.popular-news .news-items{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 12px;
-}
-.popular-news .badge{
-    font-size: 10px;
-    margin-right: 5px;
-}
-
-/* ======= Footer-Mid ======= */
+/* ======= Footer-Middle ======= */
 .footer-mid{
     display: flex;
     flex-direction: row;
@@ -118,11 +108,13 @@
 
 /* ======= Responsive ======= */
 @media (max-width: 1000px){
+    /* ======= Footer-Top ======= */
   .footer-top-column{
     border: none;
     margin-top: 21px;
   }
 
+    /* ======= Footer-Middle ======= */
   .footer-mid{
     display: flex;
     flex-direction: column;

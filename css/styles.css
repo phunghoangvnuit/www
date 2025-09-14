@@ -43,64 +43,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Bootstrap NavBar */
-nav {
-padding: 0;              /* bỏ padding để li chiếm full */
-}
-
-nav ul {
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-nav ul li {
-flex: 1;                 /* mỗi li chiếm đều chiều rộng */
-text-align: center;      /* căn giữa chữ trong li */
-color: #fff;
-padding: 3px 0;
-font-family: "Playfair Display";
-font-size: 18px;
-font-weight: 500;
-cursor: pointer;
-transition: background 0.3s;
-}
-
-nav ul li:hover {
-background: #333;
-}
-
-.navbar{
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  background-color: var(--primary) !important;
-}
-
-.navbar .navbar-toggler{
-  border: none;
-  margin: 7px 0px;
-}
-
-.navbar-nav {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  justify-content: space-between; /* chia đều */
-}
-
-.navbar-nav .nav-item {
-  flex: 1;
-  text-align: center;
-}
-
-.navbar-nav .nav-link {
-  padding-top: 2.8px;
-  padding-bottom: 2.8px;
-  font-family: "Caveat";
-  font-size: 28px; 
-}
-
 /* Cột phải: search + images */
 .right {
   width: 30%;
