@@ -1,0 +1,11 @@
+/* Bootstrap Carousel */
+.carousel-inner{
+  height: 350px;
+  margin: 21px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-inner img{
+  object-fit: cover;
+}

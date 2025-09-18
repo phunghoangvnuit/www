@@ -22,17 +22,8 @@ body {
   background-position: center; 
   background-repeat: no-repeat; 
 }
-.top{
-  display: flex;
-  flex-direction: row;
-}
 
 /* Cột trái: logo + navbar */
-.left {
-  width: 95%;
-  padding: 20px;
-  border-right: 1px solid #ccc;
-}
 .logo {
   background: var(--primary);
   color: white;
@@ -44,10 +35,6 @@ body {
 }
 
 /* Cột phải: search + images */
-.right {
-  width: 30%;
-  padding: 20px;
-}
 .search-box {
   margin-bottom: 20px;
 }
@@ -85,10 +72,6 @@ body {
 }
 .mobile-search button{
   border-radius: 20px;
-}
-
-.bottom{
-  margin-top: 35px;
 }
 
 /* Responsive: kích thước điện thoại */

@@ -1,0 +1,13 @@
+/* Bootstrap Card */
+.card img{
+  height: 200px;
+  object-fit: cover;
+}
+.card .btn{
+  background: var(--primary) !important;
+  border: var(--primary) !important;
+  color: var(--light) !important;
+}
+.card .btn:focus{
+  border: var(--primary) !important;
+}
