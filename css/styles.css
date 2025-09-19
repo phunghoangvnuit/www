@@ -1,12 +1,11 @@
 :root {
-/* --primary: #EAA636;
---secondary: #545454;
---light: #FDF5EB;
---dark: #1E1916; */
 --primary: #309b65;
 --secondary: #000000;
 --light: #FFFFFF;
 --dark: #000000;
+--primary-darker: #26764d;
+--primary-boder: #26764d;
+--primary-active: #1f5c3d;
 }
 * {
   margin: 0;
@@ -21,6 +20,14 @@ body {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body-content-container{
+  margin-top: 105px;
+  width: 70%;
 }
 
 /* Cột trái: logo + navbar */
@@ -34,30 +41,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* Cột phải: search + images */
-.search-box {
-  margin-bottom: 20px;
+/* Mặc định: ẩn thanh pc mobile trên màn hình nhỏ */
+.pc-search input{
+  border: 2px solid var(--primary-darker) !important;
+  padding-right: 54px !important;
 }
-.search-box input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 12px;
-}
-.search-box button{
-  border-radius: 20px;
-}
-.sidebar-box {
-  background: #e3e3e3;
-  height: 200px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-  font-weight: bold;
-}
+
 /* Mặc định: ẩn thanh search mobile trên màn hình lớn */
 .mobile-search{
   display: none;
@@ -65,13 +54,7 @@ body {
 }
 .mobile-search input{
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 12px;
-}
-.mobile-search button{
-  border-radius: 20px;
+  border: 2px solid var(--primary-darker) !important;
 }
 
 /* Responsive: kích thước điện thoại */
@@ -80,8 +63,11 @@ body {
     font-size: 24px;
   }
 }
-@media (max-width: 768px){
-  .right{ display: none; }      /* Ẩn cột phải */
-  .left{ width: 100%; }         /* Cột trái chiếm full */
-  .mobile-search{ display: initial; }  /* Hiện thanh search ở cột trái */
+@media (max-width: 1200px){
+  .pc-search {
+    display: none;
+  }
+  .mobile-search{ 
+    display: initial; 
+  }
 }

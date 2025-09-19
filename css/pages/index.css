@@ -18,7 +18,4 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .carousel-inner{
-    height: 210px;
-  }
 }
