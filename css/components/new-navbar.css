@@ -60,6 +60,7 @@
 
 /*** Navbar Start ***/
 .navbar-brand h1{
+    font-family: "EB Garamond";
     color: var(--primary) !important;
 }
 
