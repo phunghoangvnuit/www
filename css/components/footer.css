@@ -82,6 +82,7 @@
 .news-items .badge{
     font-size: 10px;
     margin-right: 5px;
+    border-radius: 3px;
 }
 
 /* ======= Footer-Middle ======= */

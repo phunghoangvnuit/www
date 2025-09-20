@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Web Fonts -->
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+    <!-- Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Customized Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pages/blog-details.css">
+    <!-- <link rel="stylesheet" href="./css/components/navbar.css"> -->
+    <link rel="stylesheet" href="./css/components/spinner.css">
+    <link rel="stylesheet" href="./css/components/new-navbar.css">
+    <link rel="stylesheet" href="./css/components/sidebar.css">
+    <link rel="stylesheet" href="./css/components/carousel.css">
+    <link rel="stylesheet" href="./css/components/blog-card.css">
+    <link rel="Stylesheet" href="./css/components/blog-stream.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+</head>
+<body>
+  <!-- ======= Nút Back to Top ======= -->
+  <div id="spinner" class="show w-100 vh-75 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+      <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+
+  <!-- ======= Thanh điều hướng chính (main-nav) ======= -->
+  <div class="container-fluid fixed-top">
+      <div class="container px-0">
+          <nav class="navbar navbar-light bg-white navbar-expand-xl">
+              <!-- Logo -->
+              <a href="index.html" class="navbar-brand"><h1 class="display-6">Nhung Phùng</h1></a>      
+              <!-- Button xổ xuống - active trên màn hình nhỏ -->
+              <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="fa fa-bars text-primary"></span>
+              </button>
+              <!-- Menu + Search bar -->
+              <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                  <div class="navbar-nav mx-auto">
+                      <a href="index.html" class="nav-item nav-link active">About me</a>
+                      <a href="shop.html" class="nav-item nav-link">Cover story</a>
+                      <a href="shop-detail.html" class="nav-item nav-link">Hot news</a>
+                      <a href="contact.html" class="nav-item nav-link">Travel</a>
+                  </div>
+              </div>
+              <!-- Search bar (pc) - active cho màn hình lớn -->
+              <div class="pc-search position-relative mx-auto">
+                  <input class="form-control border-2 border-secondary w-100 py-2 px-3 rounded-pill" type="text" placeholder="Search">
+                  <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;"><i class="fas fa-search text-white"></i></button>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+  <!-- ======= Phần Nội dung ======= -->
+  <div class="body-content-container">
+    <!-- Search bar (mobile) - active cho màn hình nhỏ -->
+    <div class="mobile-search position-relative mx-auto">
+        <input class="form-control border-2 border-secondary w-100 py-2 px-3 rounded-pill" type="text" placeholder="Search">
+        <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;"><i class="fas fa-search text-white"></i></button>
+    </div>
+    <div class="content-container">
+      <div class="body-left">
+        <div class="social-sharing">
+          <h5>Share</h5>
+          <div class="sharing-icon">
+            <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-square btn-outline-dark" href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="body-right">
+        <div class="content-header">
+          <h1>
+            CROISSANT ĂN CÙNG XÔI MẶN LÀ KÌ CỤC HAY HỢP LÝ
+          </h1>
+          <p class="content-info">Tác giả: Nguyễn Đăng Khoa - Ngày xuất bản: 09/07/2025</p>
+        </div>
+        <div class="content-body">
+          <p>
+            Bánh sừng bò còn được gọi là bánh croa-xăng (từ tiếng Pháp Croissant), có nguồn gốc từ Áo, là một dạng bánh ăn sáng làm từ pâte feuilletée (bột xốp), được sản xuất từ bột mì, men, bơ, sữa, và muối.
+            Bánh Croissant đúng kiểu phải thật xốp, giòn và có thể xé ra từng lớp mỏng nhỏ. Bên trong ruột không được đặc, ngược lại phải khá ruỗng thoáng (đó là bằng chứng men làm bột phát triển tốt). Ở Việt Nam hầu hết các tiệm bán bánh sừng bò làm theo công thức của bánh mì sữa (hoặc được gọi là bánh mì tươi). Về công thức làm bánh croissant, có thể nói là bánh này đứng giữa bánh pâté chaud (xốp) và bánh mì (ruột bánh nổi bởi men).
+          </p>
+          <img src="./img/product-2.jpg">
+          <p>
+            Bánh sừng bò còn được gọi là bánh croa-xăng (từ tiếng Pháp Croissant), có nguồn gốc từ Áo, là một dạng bánh ăn sáng làm từ pâte feuilletée (bột xốp), được sản xuất từ bột mì, men, bơ, sữa, và muối.
+            Bánh Croissant đúng kiểu phải thật xốp, giòn và có thể xé ra từng lớp mỏng nhỏ. Bên trong ruột không được đặc, ngược lại phải khá ruỗng thoáng (đó là bằng chứng men làm bột phát triển tốt). Ở Việt Nam hầu hết các tiệm bán bánh sừng bò làm theo công thức của bánh mì sữa (hoặc được gọi là bánh mì tươi). Về công thức làm bánh croissant, có thể nói là bánh này đứng giữa bánh pâté chaud (xốp) và bánh mì (ruột bánh nổi bởi men).
+          </p>
+          <div class="affiliate">
+            <button>Lưu bài viết</button>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Phần Chân trang ======= -->
+  <div class="footer">
+    <!-- Footer-Top: Khối trên Bao gồm 4 cột -->
+    <div class="footer-top row">
+
+      <!-- Cột 1: Follow us -->
+      <div class="col-12 col-lg-3 footer-top-column social-contacts">
+        <h3 class="footer-title">Follow us</h3>
+        <hr/>
+        <ul class="list-unstyled">
+          <a><i class="fab fa-facebook-f"></i></a>
+          <a><i class="fab fa-instagram"></i></a>
+          <a><i class="fa-brands fa-youtube"></i></a>
+          <a><i class="fa-brands fa-tiktok"></i></a>
+        </ul>
+      </div>
+
+      <!-- Cột 2: Company -->
+      <div class="col-12 col-lg-3 footer-top-column company-links">
+        <h3 class="footer-title">Company</h3>
+        <hr/>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Celebrity</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Make-up</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Latest news -->
+      <div class="col-12 col-lg-3 footer-top-column latest-news">
+        <h3 class="footer-title">Latest news</h3>
+        <hr/>
+        <div class="news-items">
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+        </div>
+      </div>
+
+      <!-- Cột 4: Popular news -->
+      <div class="col-12 col-lg-3 footer-top-column popular-news">
+        <h3 class="footer-title">Popular news</h3>
+        <hr/>
+        <div class="news-items">
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Khối giữa bao gồm logo + menu điều hướng phụ -->
+    <div class="footer-mid">
+      <!-- Demo Logo -->
+      <div class="d-flex align-items-center gap-3">
+        <div class="brand-mark">NP</div>
+        <div>
+          <div class="fw-semibold">NEWSPAPER</div>
+          <div class="brand-sub text-muted">Publication</div>
+        </div>
+      </div>
+      <!-- Menu điều hướng phụ -->
+      <ul class="nav justify-content-center footer-nav">
+        <li class="nav-item"><a class="nav-link px-2" href="#">Disclaimer</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Privacy Policy</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Subscribe</a></li>
+      </ul>
+    </div>
+
+    <!-- Khối dưới: logo + copyright -->
+    <div class="footer-bottom">
+        © 2021 tagDiv. All Rights Reserved. Made with Newspaper Theme.
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn border-3 rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>  
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Customized Script -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

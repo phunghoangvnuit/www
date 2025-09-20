@@ -9,6 +9,7 @@
 }
 .block .badge{
     font-size: 12px !important;
+    border-radius: 3px;
 }
 .article h5{
     font-family: "EB Garamond" !important;
