@@ -71,7 +71,33 @@
     gap: 10px;
 }
 
-/*Footer cột 3 + 4*/
+/*Footer cột 3*/
+.info{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.info p{
+    margin: 0;
+    padding: 0;
+}
+.info button{
+width: 100%;
+padding: 7px;
+color: var(--light);
+background: var(--primary);
+border: none;
+border-radius: 3px;
+transition: all 0.5s;
+}
+.info  button:hover{
+color: var(--light);
+background: var(--primary-darker);
+}
+
+/*Footer cột 4*/
 .news-items{
     display: flex;
     flex-direction: column;

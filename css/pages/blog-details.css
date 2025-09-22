@@ -1,22 +1,7 @@
-.top{
-  display: flex;
-  flex-direction: column;
-  padding: 0 21px;
-}
-
-.top-navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 21px 0;
-}
-
-.top-navbar .logo{
-    margin: 0;
-}
-
 /* Content-container */
+.body-content-container{
+  margin: 124px;
+}
 .content-container{
   display: flex;
   flex-direction: row;

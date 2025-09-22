@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog</title>
+  <title>Home</title>
   <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,176 +32,177 @@
   <!-- Customized Bootstrap Stylesheet -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Stylesheet -->
+  <!-- Customized Stylesheet -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/components/navbar.css">
     <link rel="stylesheet" href="./css/pages/blog-details.css">
+    <link rel="stylesheet" href="./css/components/navbar.css">
+    <link rel="stylesheet" href="./css/components/spinner.css">
+    <link rel="stylesheet" href="./css/components/sidebar.css">
+    <link rel="stylesheet" href="./css/components/carousel.css">
+    <link rel="stylesheet" href="./css/components/blog-card.css">
+    <link rel="Stylesheet" href="./css/components/blog-stream.css">
     <link rel="stylesheet" href="./css/components/footer.css">
 </head>
 <body>
- 
-  <!-- Left column -->
-  <div class="top">
-    <div class="top-navbar">
-      <div class="logo">LOGO / NAME</div>
-      <!-- search-box (ẩn trên màn hình nhỏ) -->
-      <div class="search-box mb-4">
-          <form class="d-flex">
-              <div class="input-group">
-                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                  <button class="input-group-text"><i class="fas fa-search"></i></button>
+  <!-- ======= Nút Back to Top ======= -->
+  <div id="spinner" class="show w-100 vh-75 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+      <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+
+  <!-- ======= Thanh điều hướng chính (main-nav) ======= -->
+  <div class="container-fluid fixed-top">
+      <div class="container px-0">
+          <nav class="navbar navbar-light bg-white navbar-expand-xl">
+              <!-- Logo -->
+              <a href="index.html" class="navbar-brand"><h1 class="display-6">Nhung Phùng</h1></a>      
+              <!-- Button xổ xuống - active trên màn hình nhỏ -->
+              <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="fa fa-bars text-primary"></span>
+              </button>
+              <!-- Menu + Search bar -->
+              <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                  <div class="navbar-nav mx-auto">
+                      <a href="index.html" class="nav-item nav-link active">Phùng</a>
+                      <a href="#" class="nav-item nav-link">Chuyện Phùng</a>
+                      <a href="#" class="nav-item nav-link">Lữ Phùng</a>
+                      <a href="#" class="nav-item nav-link">Sống Phùng</a>
+                      <a href="#" class="nav-item nav-link">Vị Phùng</a>
+                  </div>
               </div>
-          </form>
+              <!-- Search bar (pc) - active cho màn hình lớn -->
+              <div class="pc-search position-relative mx-auto">
+                  <input class="form-control border-2 border-secondary w-100 py-2 px-3 rounded-pill" type="text" placeholder="Search">
+                  <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;"><i class="fas fa-search text-white"></i></button>
+              </div>
+          </nav>
       </div>
-    </div>
-    <!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded mb-3">
-      <div class="container-fluid">
-        <!-- Hamburger button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menu items -->
-        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="#">About me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Cover Story</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Hot new</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Travel</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Mobile search (ẩn trên màn hình lớn) -->
-    <div class="mobile-search mb-4">
-        <form class="d-flex">
-            <div class="input-group">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="input-group-text"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
-    </div>
   </div>
 
-  <div class="content-container">
-    <div class="body-left">
-      <div class="social-sharing">
-        <h5>Share</h5>
-        <div class="sharing-icon">
-          <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-instagram"></i></a>
-          <a class="btn btn-square btn-outline-dark" href=""><i class="fa-brands fa-tiktok"></i></a>
+  <!-- ======= Phần Nội dung ======= -->
+  <div class="body-content-container">
+    <!-- Search bar (mobile) - active cho màn hình nhỏ -->
+    <div class="mobile-search position-relative mx-auto">
+        <input class="form-control border-2 border-secondary w-100 py-2 px-3 rounded-pill" type="text" placeholder="Search">
+        <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;"><i class="fas fa-search text-white"></i></button>
+    </div>
+    <div class="content-container">
+      <div class="body-left">
+        <div class="social-sharing">
+          <h5>Share</h5>
+          <div class="sharing-icon">
+            <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-square btn-outline-dark" href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="body-right">
-      <div class="content-header">
-        <h1>
-          CROISSANT ĂN CÙNG XÔI MẶN LÀ KÌ CỤC HAY HỢP LÝ
-        </h1>
-        <p class="content-info">Tác giả: Nguyễn Đăng Khoa - Ngày xuất bản: 09/07/2025</p>
-      </div>
-      <div class="content-body">
-        <p>
-          Bánh sừng bò còn được gọi là bánh croa-xăng (từ tiếng Pháp Croissant), có nguồn gốc từ Áo, là một dạng bánh ăn sáng làm từ pâte feuilletée (bột xốp), được sản xuất từ bột mì, men, bơ, sữa, và muối.
-          Bánh Croissant đúng kiểu phải thật xốp, giòn và có thể xé ra từng lớp mỏng nhỏ. Bên trong ruột không được đặc, ngược lại phải khá ruỗng thoáng (đó là bằng chứng men làm bột phát triển tốt). Ở Việt Nam hầu hết các tiệm bán bánh sừng bò làm theo công thức của bánh mì sữa (hoặc được gọi là bánh mì tươi). Về công thức làm bánh croissant, có thể nói là bánh này đứng giữa bánh pâté chaud (xốp) và bánh mì (ruột bánh nổi bởi men).
-        </p>
-        <img src="./img/product-2.jpg">
-        <p>
-          Bánh sừng bò còn được gọi là bánh croa-xăng (từ tiếng Pháp Croissant), có nguồn gốc từ Áo, là một dạng bánh ăn sáng làm từ pâte feuilletée (bột xốp), được sản xuất từ bột mì, men, bơ, sữa, và muối.
-          Bánh Croissant đúng kiểu phải thật xốp, giòn và có thể xé ra từng lớp mỏng nhỏ. Bên trong ruột không được đặc, ngược lại phải khá ruỗng thoáng (đó là bằng chứng men làm bột phát triển tốt). Ở Việt Nam hầu hết các tiệm bán bánh sừng bò làm theo công thức của bánh mì sữa (hoặc được gọi là bánh mì tươi). Về công thức làm bánh croissant, có thể nói là bánh này đứng giữa bánh pâté chaud (xốp) và bánh mì (ruột bánh nổi bởi men).
-        </p>
-        <div class="affiliate">
-          <button>Lưu bài viết</button>
-          <button>Shop Now</button>
+      <div class="body-right">
+        <div class="content-header">
+          <h1>
+            CROISSANT ĂN CÙNG XÔI MẶN LÀ KÌ CỤC HAY HỢP LÝ
+          </h1>
+          <p class="content-info">Tác giả: Nguyễn Đăng Khoa - Ngày xuất bản: 09/07/2025</p>
+        </div>
+        <div class="content-body">
+          <p>
+            Bánh sừng bò còn được gọi là bánh croa-xăng (từ tiếng Pháp Croissant), có nguồn gốc từ Áo, là một dạng bánh ăn sáng làm từ pâte feuilletée (bột xốp), được sản xuất từ bột mì, men, bơ, sữa, và muối.
+            Bánh Croissant đúng kiểu phải thật xốp, giòn và có thể xé ra từng lớp mỏng nhỏ. Bên trong ruột không được đặc, ngược lại phải khá ruỗng thoáng (đó là bằng chứng men làm bột phát triển tốt). Ở Việt Nam hầu hết các tiệm bán bánh sừng bò làm theo công thức của bánh mì sữa (hoặc được gọi là bánh mì tươi). Về công thức làm bánh croissant, có thể nói là bánh này đứng giữa bánh pâté chaud (xốp) và bánh mì (ruột bánh nổi bởi men).
+          </p>
+          <img src="./img/product-2.jpg">
+          <p>
+            Bánh sừng bò còn được gọi là bánh croa-xăng (từ tiếng Pháp Croissant), có nguồn gốc từ Áo, là một dạng bánh ăn sáng làm từ pâte feuilletée (bột xốp), được sản xuất từ bột mì, men, bơ, sữa, và muối.
+            Bánh Croissant đúng kiểu phải thật xốp, giòn và có thể xé ra từng lớp mỏng nhỏ. Bên trong ruột không được đặc, ngược lại phải khá ruỗng thoáng (đó là bằng chứng men làm bột phát triển tốt). Ở Việt Nam hầu hết các tiệm bán bánh sừng bò làm theo công thức của bánh mì sữa (hoặc được gọi là bánh mì tươi). Về công thức làm bánh croissant, có thể nói là bánh này đứng giữa bánh pâté chaud (xốp) và bánh mì (ruột bánh nổi bởi men).
+          </p>
+          <div class="affiliate">
+            <button>Lưu bài viết</button>
+            <button>Shop Now</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="bottom">
-    <!-- Footer Start -->
-    <div class="footer">
-      <!-- Footer-Top: Khối trên Bao gồm 4 cột -->
-      <div class="footer-top row">
+  <!-- ======= Phần Chân trang ======= -->
+  <div class="footer">
+    <!-- Footer-Top: Khối trên Bao gồm 4 cột -->
+    <div class="footer-top row">
 
-        <!-- Cột 1: Follow us -->
-        <div class="col-12 col-lg-3 footer-top-column social-contacts">
-          <h3 class="footer-title">Follow us</h3>
-          <hr/>
-          <ul class="list-unstyled">
-            <a><i class="fab fa-facebook-f"></i></a>
-            <a><i class="fab fa-instagram"></i></a>
-            <a><i class="fa-brands fa-youtube"></i></a>
-            <a><i class="fa-brands fa-tiktok"></i></a>
-          </ul>
-        </div>
-
-        <!-- Cột 2: Company -->
-        <div class="col-12 col-lg-3 footer-top-column company-links">
-          <h3 class="footer-title">Company</h3>
-          <hr/>
-          <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Travel</a></li>
-            <li><a href="#">Celebrity</a></li>
-            <li><a href="#">Food</a></li>
-            <li><a href="#">Make-up</a></li>
-          </ul>
-        </div>
-
-        <!-- Cột 3: Latest news -->
-        <div class="col-12 col-lg-3 footer-top-column latest-news">
-          <h3 class="footer-title">Latest news</h3>
-          <hr/>
-          <div class="news-items">
-              <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-              <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-              <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-          </div>
-        </div>
-
-        <!-- Cột 4: Popular news -->
-        <div class="col-12 col-lg-3 footer-top-column popular-news">
-          <h3 class="footer-title">Popular news</h3>
-          <hr/>
-          <div class="news-items">
-              <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-              <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-              <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Khối giữa bao gồm logo + menu điều hướng nhỏ -->
-      <div class="footer-mid">
-        <!-- Demo Logo -->
-        <div class="d-flex align-items-center gap-3">
-          <div class="brand-mark">NP</div>
-          <div>
-            <div class="fw-semibold">NEWSPAPER</div>
-            <div class="brand-sub text-muted">Publication</div>
-          </div>
-        </div>
-
-        <ul class="nav justify-content-center footer-nav">
-          <li class="nav-item"><a class="nav-link px-2" href="#">Disclaimer</a></li>
-          <li class="nav-item"><a class="nav-link px-2" href="#">Privacy Policy</a></li>
-          <li class="nav-item"><a class="nav-link px-2" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link px-2" href="#">Contact</a></li>
-          <li class="nav-item"><a class="nav-link px-2" href="#">Subscribe</a></li>
+      <!-- Cột 1: Follow us (Breeze) -> Theo dõi -->
+      <div class="col-12 col-lg-3 footer-top-column social-contacts">
+        <h3 class="footer-title">Theo dõi</h3>
+        <hr/>
+        <ul class="list-unstyled">
+          <a href="https://www.facebook.com/nhung.phung.7503/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a><i class="fab fa-instagram"></i></a>
+          <a><i class="fa-brands fa-youtube"></i></a>
+          <a><i class="fa-brands fa-tiktok"></i></a>
         </ul>
       </div>
 
-      <!-- Khối dưới: logo + copyright -->
-      <div class="footer-bottom">
-          © 2021 tagDiv. All Rights Reserved. Made with Newspaper Theme.
+      <!-- Cột 2: Company (Breeze) -> Menu -->
+      <div class="col-12 col-lg-3 footer-top-column company-links">
+        <h3 class="footer-title">Menu</h3>
+        <hr/>
+        <ul class="list-unstyled">
+          <li><a href="#">Phùng (About me)</a></li>
+          <li><a href="#">Chuyện Phùng (Cover Story)</a></li>
+          <li><a href="#">Lữ Phùng (Travel)</a></li>
+          <li><a href="#">Sống Phùng (Lifestyle)</a></li>
+          <li><a href="#">Vị Phùng (Food)</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Latest news (Breeze) -> Collab -->
+      <div class="col-12 col-lg-3 footer-top-column collab">
+        <h3 class="footer-title">Hợp tác</h3>
+        <hr/>
+        <div class="info">
+          <p>Website: <a href="#">nhungphung.com</a></p>
+          <p>Contact: nhungphung@gmail.com</p>
+          <button>Gửi Email</button>
+        </div>
+      </div>
+
+      <!-- Cột 4: Popular news (Breeze) -> Tin Hot -->
+      <div class="col-12 col-lg-3 footer-top-column popular-news">
+        <h3 class="footer-title">Tin Hot</h3>
+        <hr/>
+        <div class="news-items">
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+        </div>
       </div>
     </div>
-    <!-- Footer End -->
+
+    <!-- Khối giữa bao gồm logo + menu điều hướng phụ -->
+    <div class="footer-mid">
+      <!-- Demo Logo -->
+      <div class="d-flex align-items-center gap-3">
+        <div class="brand-mark">NP</div>
+        <div>
+          <div class="fw-semibold">NEWSPAPER</div>
+          <div class="brand-sub text-muted">Publication</div>
+        </div>
+      </div>
+      <!-- Menu điều hướng phụ -->
+      <ul class="nav justify-content-center footer-nav">
+        <li class="nav-item"><a class="nav-link px-2" href="#">Disclaimer</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Privacy Policy</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Subscribe</a></li>
+      </ul>
+    </div>
+
+    <!-- Khối dưới: logo + copyright -->
+    <div class="footer-bottom">
+        © 2021 tagDiv. All Rights Reserved. Made with Newspaper Theme.
+    </div>
   </div>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn border-3 rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -212,5 +213,7 @@
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+  <!-- Customized Script -->
+  <script src="./js/main.js"></script>
 </body>
 </html>
