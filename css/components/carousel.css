@@ -3,13 +3,14 @@
   margin: 21px 0px;
 }
 .carousel-inner{
-  height: 350px;
+  height: 100%;
   display: flex;
   align-items: center;
 }
 
 .carousel-inner img{
   object-fit: cover;
+  width: 100%;
 }
 
 @media (max-width: 700px){

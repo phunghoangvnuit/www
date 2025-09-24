@@ -166,7 +166,7 @@ background: var(--primary-darker);
 /* logo */
 .brand-mark{
     font-family: "Times New Roman", Georgia, serif;
-    font-size: 3rem;
+    font-size: 35px;
     line-height: 1;
     font-weight: 700;
     letter-spacing: .02em;
