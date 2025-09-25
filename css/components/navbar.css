@@ -115,6 +115,11 @@
         opacity: 0;
     }
 }
+@media (max-width: 500px) {
+    .navbar{
+        height: 75px !important;
+    }
+}
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-secondary);
