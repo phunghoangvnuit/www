@@ -1,10 +1,11 @@
 .sidebar {
 background: white;
-width: 300px;
+width: 280px;
 height: max-content;
 margin-top: 21px;
 position: sticky;
 top: 114px;
+right: 7vw;
 }
 
 .sidebar button{

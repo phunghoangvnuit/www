@@ -31,12 +31,11 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  padding: 0 7vw;
   gap: 21px;
-  left: 1%;
 }
 .main-content{
-  width: 60%;
+  width: 80%;
 }
 .sidebar{
   width: 100%;
@@ -56,6 +55,7 @@ body {
 .pc-search input{
   border: 2px solid var(--primary-darker) !important;
   padding-right: 54px !important;
+  width: 260px !important;
 }
 
 /* Mặc định: ẩn thanh search mobile trên màn hình lớn */
