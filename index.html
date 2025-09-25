@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="./css/components/carousel.css">
     <link rel="stylesheet" href="./css/components/blog-card.css">
     <link rel="Stylesheet" href="./css/components/blog-stream.css">
+    <link rel="stylesheet" href="./css/components/form-modal.css">
     <link rel="stylesheet" href="./css/components/footer.css">
 </head>
 <body>
@@ -243,7 +244,7 @@
       </div>
     </div>
     <div class="sidebar">
-        <button>Hợp tác</button>
+        <button data-bs-toggle="modal" data-bs-target="#formModal">Hợp tác</button>
         <div class="article-item">
             <img src="./img/food-3.jpg" alt="Food" class="article-image">
             <div class="article-content">
@@ -269,6 +270,27 @@
             <img src="./img/product-4-travel.webp" alt="Makeup artist" class="article-image">
             <div class="article-content">
                 <a href="#" class="article-title">Celebrity Make-up Artist Glenny Meyers Shows you Her Beauty Tricks</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) ======= -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-100 mx-auto d-flex">
+                      <form action="" class="">
+                          <input type="text" class="w-100 form-control border-1 py-3 mb-4 inputform" placeholder="Họ và tên">
+                          <input type="email" class="w-100 form-control border-1 py-3 mb-4 inputform" placeholder="Email của bạn">
+                          <textarea class="w-100 form-control border-1 mb-4 inputform" rows="5" cols="10" placeholder="Lời nhắn cho Nhung Phùng"></textarea>
+                          <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary inputform" type="submit">Submit</button>
+                      </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -333,10 +355,6 @@
       <!-- Demo Logo -->
       <div class="d-flex align-items-center gap-3">
         <div class="brand-mark">Nhung Phùng</div>
-        <!-- <div>
-          <div class="fw-semibold">NEWSPAPER</div>
-          <div class="brand-sub text-muted">Publication</div>
-        </div> -->
       </div>
       <!-- Menu điều hướng phụ -->
       <ul class="nav justify-content-center footer-nav">
