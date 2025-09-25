@@ -33,6 +33,7 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 21px;
+  left: 1%;
 }
 .main-content{
   width: 60%;
