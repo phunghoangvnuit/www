@@ -8,7 +8,7 @@ top: 114px;
 right: 7vw;
 }
 
-.sidebar button{
+.sidebar .collab-button{
 width: 100%;
 padding: 10px 10px;
 margin-bottom: 21px;
@@ -18,7 +18,7 @@ border: none;
 border-radius: 3px;
 transition: all 0.5s;
 }
-.sidebar button:hover{
+.sidebar collab-button:hover{
 color: var(--light);
 background: var(--primary-darker);
 }

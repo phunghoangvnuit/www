@@ -32,6 +32,8 @@
 /* ======= Footer-Top ======= */
 .footer-top{
     margin: 35px 0 21px 0;
+    width: 100%;
+    max-width: 1220px;
 }
 .footer-top-column{
     border-left: 1px solid #eaeaea;
@@ -91,6 +93,7 @@ background: var(--primary);
 border: none;
 border-radius: 3px;
 transition: all 0.5s;
+margin-top: 21px;
 }
 .info  button:hover{
 color: var(--light);
@@ -166,10 +169,11 @@ background: var(--primary-darker);
 /* logo */
 .brand-mark{
     font-family: "Times New Roman", Georgia, serif;
-    font-size: 35px;
+    font-size: 28px;
     line-height: 1;
     font-weight: 700;
     letter-spacing: .02em;
     color:#1a7d5a;
 }
-.brand-sub{ font-size:.95rem }
+.brand-sub1{ font-size: 22px; letter-spacing: 4.5px;}
+.brand-sub2{ font-size: 10px }
