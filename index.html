@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="./css/components/footer.css">
 </head>
 <body>
-  <!-- ======= Nút Back to Top ======= -->
+  <!-- ======= Nút Back to Top (TOP) ======= -->
   <div id="spinner" class="show w-100 vh-75 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
       <div class="spinner-grow text-primary" role="status"></div>
   </div>
@@ -63,18 +63,24 @@
               <!-- Search bar -->
               <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                   <div class="navbar-nav mx-auto">
-                      <!-- <a href="index.html" class="nav-item nav-link active">Phùng (About me)</a>
-                      <a href="#" class="nav-item nav-link">Chuyện Phùng (Cover Story)</a>
-                      <a href="#" class="nav-item nav-link">Lữ Phùng (Travel)</a>
-                      <a href="#" class="nav-item nav-link">Sống Phùng (Lifestyle)</a>
-                      <a href="#" class="nav-item nav-link">Vị Phùng (Food)</a>
-                      <a href="#" class="nav-item nav-link">Phùng Thời (News)</a> -->
-                      <a href="index.html" class="nav-item nav-link active">Phùng</a>
-                      <a href="#" class="nav-item nav-link">Chuyện Phùng</a>
-                      <a href="#" class="nav-item nav-link">Lữ Phùng</a>
-                      <a href="#" class="nav-item nav-link">Sống Phùng</a>
-                      <a href="#" class="nav-item nav-link">Vị Phùng</a>
-                      <a href="#" class="nav-item nav-link">Phùng Thời</a>
+                      <a href="#" class="nav-item nav-link text-center">
+                        Phùng<br><span>(About me)</span>
+                      </a>
+                      <a href="#" class="nav-item nav-link text-center">
+                        Chuyện Phùng<br><span>(Cover Story)</span>
+                      </a>
+                      <a href="#" class="nav-item nav-link text-center">
+                        Lữ Phùng<br><span>(Travel)</span>
+                      </a>
+                      <a href="#" class="nav-item nav-link text-center">
+                        Sống Phùng<br><span>(Lifestyle)</span>
+                      </a>
+                      <a href="#" class="nav-item nav-link text-center">
+                        Vị Phùng<br><span>(Food)</span>
+                      </a>
+                      <a href="#" class="nav-item nav-link text-center">
+                        Phùng Thời<br><span>(News)</span>
+                      </a>
                   </div>
               </div>
               <!-- Menu thay đổi ngôn ngữ -->
@@ -95,7 +101,12 @@
     </div>
 
     <div class="main-content">
-      <!-- Highlight box (cover story) -->
+    <!-- Carousel Slideshow -->
+      <!-- Note 30/09/25: 
+        Hiện tại slideshow đang disable, chỉ để hiện thị 1 ảnh  
+        Lưu ý không xóa các comment code trong phần này, nếu khách cần 
+        update thành slideshow nhiều ảnh thì uncomment là dùng được luôn
+      -->
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Indicators (dấu chấm bên dưới) -->
         <!-- <div class="carousel-indicators">
@@ -335,12 +346,12 @@
         <h3 class="footer-title">Menu</h3>
         <hr/>
         <ul class="list-unstyled">
-          <li><a href="#">Phùng</a></li>
-          <li><a href="#">Chuyện Phùng</a></li>
-          <li><a href="#">Lữ Phùng</a></li>
-          <li><a href="#">Sống Phùng</a></li>
-          <li><a href="#">Vị Phùng</a></li>
-          <li><a href="#">Phùng Thời</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Cover Story</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">News</a></li>
         </ul>
       </div>
 
@@ -367,9 +378,9 @@
       </div>
     </div>
 
-    <!-- Khối giữa bao gồm logo + menu điều hướng phụ -->
+    <!-- Footer-Mid: Khối giữa bao gồm logo + menu điều hướng phụ -->
     <div class="footer-mid">
-      <!-- Demo Logo -->
+      <!-- Logo -->
       <div class="d-flex align-items-center gap-4">
         <div class="brand-mark">NhungPhung</div>
         <div>
@@ -388,13 +399,13 @@
       </ul>
     </div>
 
-    <!-- Khối dưới: logo + copyright -->
+    <!-- Footer-Bottom: Khối dưới là copyright -->
     <div class="footer-bottom">
         © 2025 Phung Nhung. All Rights Reserved.
     </div>
   </div>
 
-  <!-- Back to Top -->
+  <!-- Nút Back to Top (BOTTOM) -->
   <a href="#" class="btn border-3 rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>  
 
   <!-- JavaScript Libraries -->

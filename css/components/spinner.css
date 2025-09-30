@@ -1,43 +1,39 @@
-/*** Spinner Start ***/
+/* ======= Spinner - Nút back to top ======= */
+/* Hiệu ứng có script (main.js): */
 #spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .8s ease-out, visibility 0s linear .5s;
-    z-index: 1;
+opacity: 0;
+visibility: hidden;
+transition: opacity .8s ease-out, visibility 0s linear .5s;
+z-index: 1;
 }
-
 #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
-
- .back-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    display: flex;
-    width: 45px;
-    height: 45px;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
-    z-index: 99;
-    color: var(--light) !important;               
-    background-color: var(--primary) !important; 
-    border-color: var(--primary-light) !important;    
+transition: opacity .8s ease-out, visibility 0s linear .0s;
+visibility: visible;
+opacity: 1;
 }
-
- .back-to-top:hover{
-    color: var(--light) !important;               
-    background-color: var(--primary-darker) !important; 
-    border-color: var(--primary-active) !important;   
- }
-
- .back-to-top:focus, .btn-primary:active{
-    color: var(--light) !important;
-    background-color: var(--primary-darker) !important;
-    border-color: var(--primary-darker) !important;
-    box-shadow: 0 0 0 0.25rem rgba(48, 155, 101, 0.5) !important;
- }
-/*** Spinner End ***/
+.back-to-top {
+position: fixed;
+right: 30px;
+bottom: 30px;
+display: flex;
+width: 45px;
+height: 45px;
+align-items: center;
+justify-content: center;
+transition: 0.5s;
+z-index: 99;
+color: var(--light) !important;               
+background-color: var(--primary) !important; 
+border-color: var(--primary-light) !important;    
+}
+.back-to-top:hover{
+color: var(--light) !important;               
+background-color: var(--primary-darker) !important; 
+border-color: var(--primary-active) !important;   
+}
+.back-to-top:focus, .btn-primary:active{
+color: var(--light) !important;
+background-color: var(--primary-darker) !important;
+border-color: var(--primary-darker) !important;
+box-shadow: 0 0 0 0.25rem rgba(48, 155, 101, 0.5) !important;
+}

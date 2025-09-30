@@ -1,121 +1,120 @@
-/* Footer */
-/* ======= Style chung ======= */
+/* ======= Footer ======= */
 .footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 0 7vw;
-    margin: 56px 0 0 0;
-    font-size: 14px;
-    color: #000;
-    border-top: 1px solid #eaeaea;
-    width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: white;
+padding: 0 7vw;
+margin: 56px 0 0 0;
+font-size: 14px;
+color: #000;
+border-top: 1px solid #eaeaea;
+width: 100%;
 }
 .footer .footer-title{
-    font-family: "EB Garamond";
-    font-weight: 700;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
+font-family: "EB Garamond";
+font-weight: 700;
+font-size: 22px;
+margin: 0;
+padding: 0;
 }
 .footer a{
-    color: #000000;
-    line-height: 21px;
-    transition: .28s ease;
+color: #000000;
+line-height: 21px;
+transition: .28s ease;
 }
 .footer a:hover{
-    color: #1a7d5a;
+color: #1a7d5a;
 }
 
-/* ======= Footer-Top ======= */
-.footer-top{
+    /* Footer-Top */
+    .footer-top{
     margin: 35px 0 21px 0;
     width: 100%;
     max-width: 1220px;
-}
-.footer-top-column{
+    }
+    .footer-top-column{
     border-left: 1px solid #eaeaea;
-}
-.footer-top-column:first-child{
+    }
+    .footer-top-column:first-child{
     border-left: none;
-}
-.footer-top-column hr{
+    }
+    .footer-top-column hr{
     height: 1.4px;
     opacity: 1;
     margin: 7px 0 18px 0;
-}
+    }
 
-/*Footer cột 1*/
-.social-contacts ul{
-    display: flex;
-    flex-direction: row;
-    gap: 7px;
-}
-.social-contacts a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    background: #000000;
-}
-.social-contacts i{
-    color: #ffffff;
-}
+        /*Footer cột 1*/
+        .social-contacts ul{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        }
+        .social-contacts a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        background: #000000;
+        }
+        .social-contacts i{
+        color: #ffffff;
+        }
 
-/*Footer cột 2*/
-.company-links ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+        /*Footer cột 2*/
+        .company-links ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
 
-/*Footer cột 3*/
-.info{
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    gap: 10px;
-    margin-bottom: 16px;
-}
-.info p{
-    margin: 0;
-    padding: 0;
-}
-.info button{
-width: 100%;
-padding: 7px;
-color: var(--light);
-background: var(--primary);
-border: none;
-border-radius: 3px;
-transition: all 0.5s;
-margin-top: 21px;
-}
-.info  button:hover{
-color: var(--light);
-background: var(--primary-darker);
-}
+        /*Footer cột 3*/
+        .info{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 10px;
+        margin-bottom: 16px;
+        }
+        .info p{
+        margin: 0;
+        padding: 0;
+        }
+        .info button{
+        width: 100%;
+        padding: 7px;
+        color: var(--light);
+        background: var(--primary);
+        border: none;
+        border-radius: 3px;
+        transition: all 0.5s;
+        margin-top: 21px;
+        }
+        .info  button:hover{
+        color: var(--light);
+        background: var(--primary-darker);
+        }
 
-/*Footer cột 4*/
-.news-items{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 12px;
-    margin-bottom: 16px;
-}
-.news-items .badge{
-    font-size: 10px;
-    margin-right: 5px;
-    border-radius: 3px;
-}
+        /*Footer cột 4*/
+        .news-items{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 12px;
+        margin-bottom: 16px;
+        }
+        .news-items .badge{
+        font-size: 10px;
+        margin-right: 5px;
+        border-radius: 3px;
+        }
 
-/* ======= Footer-Middle ======= */
-.footer-mid{
+    /* ======= Footer-Middle ======= */
+    .footer-mid{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,35 +124,32 @@ background: var(--primary-darker);
     padding: 21px 0;
     width: 100%;
     max-width: 1220px;
-}
+    }
 
-/* ======= Footer-Bottom ======= */
-.footer-bottom{
+    /* ======= Footer-Bottom ======= */
+    .footer-bottom{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 21px 0;
     text-align: center;
-}
+    }
 
-/* ======= Responsive ======= */
+/* Responsive */
 @media (max-width: 1000px){
-    /* ======= Footer-Top ======= */
-  .footer-top-column{
-    border: none;
-    margin-top: 21px;
-  }
-
-    /* ======= Footer-Middle ======= */
-  .footer-mid{
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-mid .footer-nav{
-    display: flex;
-    flex-direction: row;
-  }
+.footer-top-column{
+border: none;
+margin-top: 21px;
+}
+.footer-mid{
+display: flex;
+flex-direction: column;
+}
+.footer-mid .footer-nav{
+display: flex;
+flex-direction: row;
+}
 }
 
 
@@ -168,12 +164,12 @@ background: var(--primary-darker);
 /* ======= Demo Only =======*/
 /* logo */
 .brand-mark{
-    font-family: "Times New Roman", Georgia, serif;
-    font-size: 28px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: .02em;
-    color:#1a7d5a;
+font-family: "Times New Roman", Georgia, serif;
+font-size: 28px;
+line-height: 1;
+font-weight: 700;
+letter-spacing: .02em;
+color:#1a7d5a;
 }
 .brand-sub1{ font-size: 22px; letter-spacing: 4.5px;}
 .brand-sub2{ font-size: 10px }
