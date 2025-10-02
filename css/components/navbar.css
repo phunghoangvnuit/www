@@ -20,7 +20,7 @@ color: var(--dark);
 .navbar {
 height: 100px;
 border-bottom: 1px solid rgba(255, 255, 255, .1); 
-padding: 0 7vw;
+padding: 0 10vw;
 }
 .navbar-nav{
 gap: 49px !important;
