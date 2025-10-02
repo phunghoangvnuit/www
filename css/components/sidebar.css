@@ -1,7 +1,7 @@
 /* ======= SideBar ======= */
 .sidebar {
 background: white;
-width: 280px;
+width: 300px;
 height: max-content;
 margin-top: 21px;
 position: sticky;
@@ -18,16 +18,16 @@ border: none;
 border-radius: 3px;
 transition: all 0.5s;
 }
-.sidebar collab-button:hover{
+.sidebar .collab-button:hover{
 color: var(--light);
 background: var(--primary-darker);
 }
 .article-item {
 display: flex;
 align-items: center;
-margin-bottom: 20px;
+/* margin-bottom: 20px;
 padding-bottom: 20px;
-border-bottom: 1px solid #eee;
+border-bottom: 1px solid #eee; */
 }
 .article-item:last-child {
 border-bottom: none;
