@@ -22,6 +22,11 @@ transition: all 0.5s;
 color: var(--light);
 background: var(--primary-darker);
 }
+
+.sidebar blockquote{
+margin-right: 15px;
+}
+
 .article-item {
 display: flex;
 align-items: center;
@@ -35,8 +40,8 @@ margin-bottom: 0;
 padding-bottom: 0;
 }
 .article-image {
-width: 120px;
-height: 150px;
+width: 180px;
+height: 240px;
 object-fit: cover;
 margin-right: 15px;
 flex-shrink: 0;
