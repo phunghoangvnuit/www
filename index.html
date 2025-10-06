@@ -96,7 +96,18 @@
                     <li><a class="dropdown-item" href="#">English</a></li>
                   </ul>
                 </div>
-                <i class="fas fa-search text-primary" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
+                <!-- <i class="fas fa-search text-primary" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#searchModal"></i> -->
+                <!-- target here -->
+                <div class="searchbar">
+                    <i class="fa fa-search" style="color: var(--primary);" aria-hidden="true"></i>
+                     <div class="togglesearch">
+                      <div class="pc-search position-relative mx-auto">
+                        <input class="form-control w-100 py-2 px-3" type="text" placeholder="Search">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-4 position-absolute text-white h-100" style="top: 0; right: -10px"><i class="fas fa-search text-white"></i></button>
+                      </div>
+                    </div>
+                </div>
+                <!-- target here -->
               </div>
           </nav>
       </div>
@@ -429,5 +440,6 @@
 
   <!-- Customized Script -->
   <script src="./js/main.js"></script>
+  <script src="./js/searchbar.js"></script>
 </body>
 </html>

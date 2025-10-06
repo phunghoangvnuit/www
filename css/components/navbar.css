@@ -1,18 +1,18 @@
 /* ======= Navigation Bar ======= */
 .nav-left, .nav-right{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+display: flex;
+flex-direction: row;
+align-items: center;
 }
 .nav-left{
-    justify-content: center;
-    width: 1215px;
+justify-content: center;
+width: 1215px;
 }
 .nav-right{
-    width: 300px;
-    justify-content: center;
-    gap: 14px;
-    margin-left: 21px;
+width: 300px;
+justify-content: center;
+gap: 14px;
+margin-left: 21px;
 }
 
 .container-fluid{
@@ -43,8 +43,8 @@ flex-direction: row;
 justify-content: center;
 }
 .navbar strong, .navbar li{
-    font-family: "Roboto";
-    letter-spacing: 0.7px;
+font-family: "Roboto";
+letter-spacing: 0.7px;
 }
 .navbar-nav{
 gap: 49px !important;
@@ -111,19 +111,62 @@ height: 75px !important;
 
 /* ======= Menu Chọn Ngôn Ngữ ======= */
 .language-selector{
-    border: solid 1px var(--primary) !important;
-    border-radius: 7px;
+border: solid 1px var(--primary) !important;
+border-radius: 7px;
 }
 .language-selector button{
-    color: var(--primary) !important;
+color: var(--primary) !important;
 }
 .language-selector .dropdown-item:hover{
-    background-color: var(--light) !important;
+background-color: var(--light) !important;
 }
 
 
 
-/* ======= Search-Bar ======= */
+/* ======= Search-Bar(demo) ======= */
+.searchbar{
+position: relative;
+}
+.togglesearch{
+/* background: var(--light); */
+position: absolute;
+top: 50px;
+right: -28px;
+width: 1456px;
+height: 60px;
+line-height: 60px;
+/* box-shadow: 0 0 7px rgba(0,0,0,0.28); */
+/* border-top:4px solid var(--primary); */
+display: none;
+padding: 7px;
+}
+
+.togglesearch:before{
+content: "";
+position: absolute;
+top: -21px;
+right: 21px;
+border-left: 12px solid transparent;
+border-right: 12px solid transparent;
+border-top: 14px solid transparent;
+border-bottom: 14px solid var(--primary);
+}
+
+.search-container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.search-container input{
+padding: 5px;
+width: 1442px;
+height: 40px;
+}
+.search-container input:focus{
+border-color: red !important;
+}
+
 
 
 

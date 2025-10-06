@@ -57,10 +57,9 @@ body {
 .pc-search input{
   border: 2px solid var(--primary-darker) !important;
   padding-right: 54px !important;
-  width: 300px !important;
-}
-.pc-search button{
-  background-color: transparent !important;
+  width: 1452px !important;
+  height: 63px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.28);
 }
 
 /* Mặc định: ẩn thanh search mobile trên màn hình lớn */
