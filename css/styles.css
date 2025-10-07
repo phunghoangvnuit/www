@@ -8,104 +8,71 @@
 --primary-active: #1f5c3d;
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
 }
 body {
-  min-height: 100vh;
-  /* background: #efece8; */
-  /* background-image: url("../img//background-image.png"); */
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+min-height: 100vh;
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat; 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
+
 .body-content-container{
-  font-family: "Roboto";
-  margin-top: 105px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+font-family: "Roboto";
+margin-top: 105px;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 .main-content{
-  width: 1215px;
+width: 1215px;
 }
 .sidebar{
-  width: 300px;
-  margin-left: 21px;
+width: 300px;
+margin-left: 21px;
 }
 
-.hot-news{
-  font-size: 16px;
-  font-family: "Roboto";
-}
-.hot-news strong{
-  font-family: "EB Garamond";
-  font-size: 21px;
-  color: var(--primary);
-}
-
-/* Mặc định: ẩn thanh pc mobile trên màn hình nhỏ */
-.pc-search{
-  margin-bottom: 21px;
-}
-.pc-search input{
-  border: 2px solid var(--primary-darker) !important;
-  padding-right: 54px !important;
-  width: 1510px !important;
-  height: 63px;
-  box-shadow: 0 0 7px rgba(0,0,0,0.28);
-}
-
-/* Mặc định: ẩn thanh search mobile trên màn hình lớn */
-.mobile-search{
-  display: none;
-  gap: 8px;
-}
-.mobile-search input{
-  flex: 1;
-  border: 2px solid var(--primary-darker) !important;
-}
-
-/* Responsive: kích thước điện thoại */
+/* Responsive */
 @media (max-width: 1268px){
-  .navbar-nav .nav-link {
-    font-size: 24px;
-  }
+.navbar-nav .nav-link {
+font-size: 24px;
+}
 }
 @media (max-width: 1200px){
-  .pc-search {
-    display: none;
-  }
-  .mobile-search{ 
-    display: initial; 
-  }
-  .body-content-container{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 21px;
-  }
-  .main-content{
-    width: 100%;
-    display: initial;
-  }
-  .sidebar{
-    width: 0%;
-    display: none;
-  }
-  .mobile-search{
-    width: 100%;
-  }
+.pc-search {
+display: none;
+}
+.mobile-search{ 
+display: initial; 
+}
+.body-content-container{
+width: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 21px;
+}
+.main-content{
+width: 100%;
+display: initial;
+}
+.sidebar{
+width: 0%;
+display: none;
+}
+.mobile-search{
+width: 100%;
+}
 }
 @media (max-width: 768px){
-  .body-content-container{
-    width: 100%;
-  }
+.body-content-container{
+width: 100%;
+}
 }

@@ -22,11 +22,9 @@ transition: all 0.5s;
 color: var(--light);
 background: var(--primary-darker);
 }
-
 .sidebar blockquote{
 margin-right: 15px;
 }
-
 .article-item {
 display: flex;
 align-items: center;

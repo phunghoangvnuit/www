@@ -1,4 +1,10 @@
 /* ======= List blog dạng card ======= */
+.block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
 .card{
 border-radius: 0 !important;
 }
@@ -16,4 +22,12 @@ color: var(--light) !important;
 }
 .card .btn:focus{
 border: var(--primary) !important;
+}
+
+/* Responsive */
+@media (max-width: 700px){
+  .block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
