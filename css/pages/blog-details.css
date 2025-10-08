@@ -1,14 +1,16 @@
 /* Content-container */
 .body-content-container{
-  margin: 124px;
+  /* margin: 124px; */
 }
 .content-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 56px;
 }
 .content-container .body-left{
   padding: 0 28px 0 0;
+  height: 600px;
 }
 .content-container .body-right{
   display: flex;
@@ -57,23 +59,12 @@
 }
 
 /* Social-sharing */
-.social-sharing{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  padding: 10px 20px;
-  border: solid;
-  border-width: 2px;
-  border-color: lightgray;
-  border-radius: 10px;
-  background-color: white;
-}
 .sharing-icon{
   display: flex;
   flex-direction: column;
   gap: 7px;
+  position: sticky;
+  top: 140px;
 }
 .sharing-icon a{
   width: 42px;

@@ -1,0 +1,104 @@
+.comment-container{
+width: 1000px;
+}
+
+.comment-container h1{
+font-size: 28px;
+}
+
+.be-comment-block {
+border: 1px solid #edeff2;
+border-radius: 6px;
+padding: 50px 70px;
+background: #fff;
+}
+
+.comments-title {
+font-size: 16px;
+color: #262626;
+margin-bottom: 28px;
+font-weight: 700;
+}
+
+.be-img-comment {
+width: 60px;
+height: 60px;
+float: left;
+margin-bottom: 15px;
+}
+
+.be-ava-comment {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.be-comment-content {
+margin-left: 80px;
+}
+
+.be-comment-content span {
+display: inline-block;
+width: 49%;
+margin-bottom: 15px;
+}
+
+.be-comment-name {
+font-size: 13px;
+font-weight: 700;
+}
+
+.be-comment-content a {
+color: #383b43;
+text-decoration: none;
+}
+
+.be-comment-time {
+text-align: right;
+font-size: 11px;
+color: #b4b7c1;
+}
+
+.be-comment-text {
+font-size: 13px;
+line-height: 18px;
+color: #7a8192;
+display: block;
+background: #f6f6f7;
+border: 1px solid #edeff2;
+padding: 15px 20px 20px 20px;
+border-radius: 4px;
+}
+
+/* Input with leading icon */
+.fl_icon .icon {
+position: absolute;
+top: 50%;
+left: 12px;
+transform: translateY(-50%);
+width: 40px;
+height: 40px;
+color: #b5b8c2;
+text-align: center;
+line-height: 40px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+pointer-events: none;
+}
+
+.fl_icon .form-control {
+padding-left: 56px; /* space for the icon */
+height: 50px;
+}
+
+textarea.form-control {
+min-height: 150px;
+}
+
+/* Small tweak for mobile spacing inside the block */
+@media (max-width: 576px) {
+.be-comment-block {
+padding: 32px 20px;
+}
+}

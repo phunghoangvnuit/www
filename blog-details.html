@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="./css/components/carousel.css">
     <link rel="stylesheet" href="./css/components/blog-card.css">
     <link rel="Stylesheet" href="./css/components/blog-stream.css">
+    <link rel="stylesheet" href="./css/components/comment.css">
     <link rel="stylesheet" href="./css/components/footer.css">
 </head>
 <body>
@@ -52,29 +53,60 @@
 
   <!-- ======= Thanh điều hướng chính (main-nav) ======= -->
   <div class="container-fluid fixed-top">
-      <div class="container px-0">
+      <div class="container-fluid px-0">
           <nav class="navbar navbar-light bg-white navbar-expand-xl">
-              <!-- Logo -->
-              <a href="index.html" class="navbar-brand"><h1 class="display-6">Nhung Phùng</h1></a>      
-              <!-- Button xổ xuống - active trên màn hình nhỏ -->
-              <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                  <span class="fa fa-bars text-primary"></span>
-              </button>
-              <!-- Menu + Search bar -->
-              <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                  <div class="navbar-nav mx-auto">
-                      <a href="index.html" class="nav-item nav-link active">Phùng</a>
-                      <a href="#" class="nav-item nav-link">Chuyện Phùng</a>
-                      <a href="#" class="nav-item nav-link">Lữ Phùng</a>
-                      <a href="#" class="nav-item nav-link">Sống Phùng</a>
-                      <a href="#" class="nav-item nav-link">Vị Phùng</a>
-                      <a href="#" class="nav-item nav-link">Phùng Thời</a>
-                  </div>
+              <div class="nav-left">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" style="margin: 0; padding: 0;"><h1 class="display-6">NhungPhung</h1></a>      
+                <!-- Button xổ xuống - active trên màn hình nhỏ -->
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Phùng</strong><br><i>(About me)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Chuyện Phùng</strong><br><i>(Cover Story)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Lữ Phùng</strong><br><i>(Travel)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Sống Phùng</strong><br><i>(Lifestyle)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Vị Phùng</strong><br><i>(Food)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Phùng Thời</strong><br><i>(News)</i>
+                        </a>
+                    </div>
+                </div>
               </div>
-              <!-- Search bar (pc) - active cho màn hình lớn -->
-              <div class="pc-search position-relative mx-auto">
-                  <input class="form-control border-2 border-secondary w-100 py-2 px-3 rounded-pill" type="text" placeholder="Search">
-                  <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;"><i class="fas fa-search text-white"></i></button>
+              <div class="nav-right">
+                <!-- Menu thay đổi ngôn ngữ -->
+                <div class="dropdown language-selector">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-globe"></i> Language
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
+                <!-- PC Search - active cho màn hình lớn -->
+                <div class="searchbar">
+                    <i class="fa fa-search" style="color: var(--primary);" aria-hidden="true"></i>
+                     <div class="togglesearch">
+                      <div class="pc-search position-relative mx-auto">
+                        <input class="form-control w-100 py-2 px-3" type="text" placeholder="Search">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-4 position-absolute text-white h-100" style="top: 0; right: -10px"><i class="fas fa-search text-white"></i></button>
+                      </div>
+                    </div>
+                </div>
               </div>
           </nav>
       </div>
@@ -82,20 +114,16 @@
 
   <!-- ======= Phần Nội dung ======= -->
   <div class="body-content-container">
-    <!-- Search bar (mobile) - active cho màn hình nhỏ -->
-    <div class="mobile-search position-relative mx-auto">
-        <input class="form-control border-2 border-secondary w-100 py-2 px-3 rounded-pill" type="text" placeholder="Search">
-        <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;"><i class="fas fa-search text-white"></i></button>
-    </div>
     <div class="content-container">
       <div class="body-left">
-        <div class="social-sharing">
-          <h5>Share</h5>
-          <div class="sharing-icon">
-            <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-instagram"></i></a>
-            <a class="btn btn-square btn-outline-dark" href=""><i class="fa-brands fa-tiktok"></i></a>
-          </div>
+        <div class="sharing-icon">
+          <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-square btn-outline-dark" href=""><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-square btn-outline-dark" href=""><i class="fa-brands fa-tiktok"></i></a>
+          <a class="btn btn-square btn-outline-dark" href=""><i class="fa-brands fa-youtube"></i></a>
+          <a class="btn btn-square btn-outline-dark" href=""><i class="fa-solid fa-link"></i></a>
+          <a class="btn btn-square btn-outline-dark" href=""><i class="fa-regular fa-bookmark"></i></a>
+          <a class="btn btn-square btn-outline-dark" href=""><i class="fa-solid fa-arrow-left"></i></a>
         </div>
       </div>
       <div class="body-right">
@@ -103,7 +131,7 @@
           <h1>
             CROISSANT ĂN CÙNG XÔI MẶN LÀ KÌ CỤC HAY HỢP LÝ
           </h1>
-          <p class="content-info">Tác giả: Nguyễn Đăng Khoa - Ngày xuất bản: 09/07/2025</p>
+          <p class="content-info">Ngày xuất bản: 09/07/2025</p>
         </div>
         <div class="content-body">
           <p>
@@ -117,7 +145,100 @@
           </p>
           <div class="affiliate">
             <button>Lưu bài viết</button>
-            <button>Shop Now</button>
+          </div>
+        </div>
+        <!-- Demo -->
+        <div class="container my-4 comment-container">
+          <div class="be-comment-block shadow-sm">
+            <div class="comments-title">Comments (3)</div>
+
+            <div class="be-comment mb-4 clearfix">
+              <div class="be-img-comment">
+                <a href="blog-detail-2.html">
+                  <img src="https://static.vecteezy.com/system/resources/previews/024/983/914/non_2x/simple-user-default-icon-free-png.png" alt="" class="be-ava-comment">
+                </a>
+              </div>
+              <div class="be-comment-content">
+                <span class="be-comment-name">
+                  <a href="blog-detail-2.html">Nguyễn Đăng Khoa</a>
+                </span>
+                <span class="be-comment-time">
+                  <i class="fa-regular fa-clock"></i>
+                  May 27, 2015 at 3:14am
+                </span>
+                <p class="be-comment-text">
+                  Pellentesque gravida tristique ultrices.
+                  Sed blandit varius mauris, vel volutpat urna hendrerit id.
+                  Curabitur rutrum dolor gravida turpis tristique efficitur.
+                </p>
+              </div>
+            </div>
+
+            <div class="be-comment mb-4 clearfix">
+              <div class="be-img-comment">
+                <a href="blog-detail-2.html">
+                  <img src="https://static.vecteezy.com/system/resources/previews/024/983/914/non_2x/simple-user-default-icon-free-png.png" alt="" class="be-ava-comment">
+                </a>
+              </div>
+              <div class="be-comment-content">
+                <span class="be-comment-name">
+                  <a href="blog-detail-2.html">Phùng Hoàng</a>
+                </span>
+                <span class="be-comment-time">
+                  <i class="fa-regular fa-clock"></i>
+                  May 27, 2015 at 3:14am
+                </span>
+                <p class="be-comment-text">
+                  Nunc ornare sed dolor sed mattis. In scelerisque dui a arcu mattis, at maximus eros commodo.
+                  Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque.
+                  Duis eleifend lorem non ant. Proin ut ornare lectus, vel eleifend est.
+                  Fusce hendrerit dui in turpis tristique blandit.
+                </p>
+              </div>
+            </div>
+
+            <div class="be-comment mb-5 clearfix">
+              <div class="be-img-comment">
+                <a href="blog-detail-2.html">
+                  <img src="https://static.vecteezy.com/system/resources/previews/024/983/914/non_2x/simple-user-default-icon-free-png.png" alt="" class="be-ava-comment">
+                </a>
+              </div>
+              <div class="be-comment-content">
+                <span class="be-comment-name">
+                  <a href="blog-detail-2.html">Nguyễn Văn An</a>
+                </span>
+                <span class="be-comment-time">
+                  <i class="fa-regular fa-clock"></i>
+                  May 27, 2015 at 3:14am
+                </span>
+                <p class="be-comment-text">
+                  Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant
+                </p>
+              </div>
+            </div>
+
+            <form class="form-block" action="#" method="post" novalidate>
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="position-relative fl_icon">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <input class="form-control" type="text" placeholder="Tên của bạn" name="name">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="position-relative fl_icon">
+                    <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                    <input class="form-control" type="email" placeholder="Email liên hệ" name="email">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" placeholder="Bình luận của bạn" name="message" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary float-end" style="color: white ">Đăng bình luận</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -134,9 +255,9 @@
         <h3 class="footer-title">Theo dõi</h3>
         <hr/>
         <ul class="list-unstyled">
-          <a href="https://www.facebook.com/nhung.phung.7503/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a><i class="fab fa-instagram"></i></a>
-          <a><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/nhungphungblog" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nhung_phung_official"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@NhungPhungBlog"><i class="fa-brands fa-youtube"></i></a>
           <a href="https://www.tiktok.com/@nhungphung_official"><i class="fa-brands fa-tiktok"></i></a>
         </ul>
       </div>
@@ -146,12 +267,12 @@
         <h3 class="footer-title">Menu</h3>
         <hr/>
         <ul class="list-unstyled">
-          <li><a href="#">Phùng (About me)</a></li>
-          <li><a href="#">Chuyện Phùng (Cover Story)</a></li>
-          <li><a href="#">Lữ Phùng (Travel)</a></li>
-          <li><a href="#">Sống Phùng (Lifestyle)</a></li>
-          <li><a href="#">Vị Phùng (Food)</a></li>
-          <li><a href="#">Phùng Thời (News)</a></li>
+          <li><a href="#">Phùng</a></li>
+          <li><a href="#">Chuyện Phùng</a></li>
+          <li><a href="#">Lữ Phùng</a></li>
+          <li><a href="#">Sống Phùng</a></li>
+          <li><a href="#">Vị Phùng</a></li>
+          <li><a href="#">Phùng Thời</a></li>
         </ul>
       </div>
 
@@ -160,9 +281,9 @@
         <h3 class="footer-title">Hợp tác</h3>
         <hr/>
         <div class="info">
-          <p>Website: <a href="#">nhungphung.com</a></p>
-          <p>Contact: nhungphung@gmail.com</p>
-          <button>Gửi Email</button>
+          <p><i class="fas fa-globe"></i> <a href="#">nhungphung.com</a></p>
+          <p><i class="far fa-envelope"></i> contact: nhungphung@gmail.com</p>
+          <button class="collab-button" data-bs-toggle="modal" data-bs-target="#formModal">Hợp tác</button>
         </div>
       </div>
 
@@ -178,23 +299,28 @@
       </div>
     </div>
 
-    <!-- Khối giữa bao gồm logo + menu điều hướng phụ -->
+    <!-- Footer-Mid: Khối giữa bao gồm logo + menu điều hướng phụ -->
     <div class="footer-mid">
-      <!-- Demo Logo -->
-      <div class="d-flex align-items-center gap-3">
-        <div class="brand-mark">Nhung Phùng</div>
+      <!-- Logo -->
+      <div class="d-flex align-items-center gap-4">
+        <div class="brand-mark">NhungPhung</div>
+        <div>
+          <div class="fw-semibold brand-sub1">BLOGGER</div>
+          <div class="brand-sub2 text-muted">TASTE | TRAVEL | LIFESTYLE</div>
+        </div>
       </div>
       <!-- Menu điều hướng phụ -->
       <ul class="nav justify-content-center footer-nav">
-        <li class="nav-item"><a class="nav-link px-2" href="#">Disclaimer</a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#">Privacy Policy</a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#">Contact</a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#">Subscribe</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">About me</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Cover Story</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Travel</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Lifestyle</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Food</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">News</a></li>
       </ul>
     </div>
 
-    <!-- Khối dưới: logo + copyright -->
+    <!-- Footer-Bottom: Khối dưới là copyright -->
     <div class="footer-bottom">
         © 2025 Phung Nhung. All Rights Reserved.
     </div>
@@ -214,5 +340,6 @@
 
   <!-- Customized Script -->
   <script src="./js/main.js"></script>
+  <script src="./js/searchbar.js"></script>
 </body>
 </html>
