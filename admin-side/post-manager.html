@@ -372,93 +372,91 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <div class="container-fluid my-4">
+                    <div class="col-lg-11 mx-auto">
+                    <div class="card card-rounded shadow-sm mb-4">
+                        <div class="card-body">
+                        <h5 class="card-title mb-3">Thông tin bài đăng</h5>
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tiêu đề</label>
+                            <input id="title" type="text" class="form-control" placeholder="Nhập tiêu đề bài viết" />
+                            <div class="invalid-feedback">Vui lòng nhập tiêu đề</div>
+                        </div>
 
-                    <div class="container my-4">
-                        <div class="col-lg-8 mx-auto">
-                        <div class="card card-rounded shadow-sm mb-4">
-                            <div class="card-body">
-                            <h5 class="card-title mb-3">Thông tin bài đăng</h5>
-                            <div class="mb-3">
-                                <label class="form-label">Tiêu đề</label>
-                                <input id="title" type="text" class="form-control" placeholder="Nhập tiêu đề bài viết" />
-                                <div class="invalid-feedback">Vui lòng nhập tiêu đề</div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Đường dẫn (slug)</label>
-                                <input id="slug" type="text" class="form-control" placeholder="tu-dong-tao-theo-tieu-de" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Loại bài đăng</label>
-                                <select id="postType" class="form-select">
+                        <div class="mb-3">
+                            <label class="form-label">Đường dẫn (slug)</label>
+                            <input id="slug" type="text" class="form-control" placeholder="tu-dong-tao-theo-tieu-de" />
+                        </div>
+
+                        <!-- 2 selection inline -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                            <label class="form-label">Loại bài đăng</label>
+                            <select id="postType" class="form-select">
                                 <option value="">— Chọn loại —</option>
-                                <option value="Article">Bài viết</option>
-                                <option value="Tutorial">Hướng dẫn</option>
-                                <option value="News">Tin tức</option>
-                                </select>
-                                <div class="invalid-feedback">Chọn loại bài đăng</div>
+                                <option value="type_1">type_1</option>
+                                <option value="type_2">type_2</option>
+                                <option value="type_3">type_3</option>
+                            </select>
+                            <div class="invalid-feedback">Chọn loại bài đăng</div>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Chuyên mục</label>
-                                <select id="category" class="form-select">
+                            <div class="col-md-6">
+                            <label class="form-label">Chuyên mục</label>
+                            <select id="category" class="form-select">
                                 <option value="">— Chọn chuyên mục —</option>
-                                <option>General</option>
-                                <option>Programming</option>
-                                <option>Electronics</option>
-                                <option>AI/ML</option>
-                                <option>Business</option>
-                                <option>Other</option>
-                                </select>
-                                <div class="invalid-feedback">Chọn chuyên mục</div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Tags (ngăn cách bằng dấu phẩy)</label>
-                                <input id="tags" type="text" class="form-control" placeholder="vd: spring, react, arduino" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Ảnh đại diện</label>
-                                <div class="p-3 text-center cover-drop">
-                                <img id="coverPreview" class="img-fluid rounded" style="aspect-ratio:16/9; object-fit:cover; display:none;" alt="preview" />
-                                <p id="coverPlaceholder" class="text-secondary m-0">Chưa có ảnh. Tải ảnh đại diện cho bài viết.</p>
-                                <div class="d-flex justify-content-center gap-2 mt-3">
-                                    <button id="btnPick" class="btn btn-outline-secondary btn-sm" type="button">Chọn ảnh</button>
-                                    <button id="btnRemove" class="btn btn-outline-secondary btn-sm" type="button">Xoá ảnh</button>
-                                </div>
-                                <input id="coverInput" type="file" accept="image/*" hidden />
-                                </div>
-                            </div>
+                                <option>option_1</option>
+                                <option>option_2</option>
+                                <option>option_3</option>
+                                <option>option_4</option>
+                                <option>option_5</option>
+                                <option>option_6</option>
+                            </select>
+                            <div class="invalid-feedback">Chọn chuyên mục</div>
                             </div>
                         </div>
 
-                        <div class="card card-rounded shadow-sm mb-4">
-                            <div class="card-body">
-                            <h5 class="card-title mb-3">Nội dung (Tiếng Việt)</h5>
-                            <div id="editorVI"></div>
-                            <div class="invalid-feedback d-block" id="errVI" style="display:none">Nhập nội dung tiếng Việt</div>
-                            </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tags (ngăn cách bằng dấu phẩy)</label>
+                            <input id="tags" type="text" class="form-control" placeholder="VD: tag1, tag2, tag3" />
                         </div>
 
-                        <div class="card card-rounded shadow-sm mb-4">
-                            <div class="card-body">
-                            <h5 class="card-title mb-3">Content (English)</h5>
-                            <div id="editorEN"></div>
-                            <div class="invalid-feedback d-block" id="errEN" style="display:none">Nhập nội dung tiếng Anh</div>
+                        <div class="mb-3">
+                            <label class="form-label">Ảnh đại diện</label>
+                            <div class="p-3 text-center cover-drop">
+                            <img id="coverPreview" class="img-fluid rounded" style="aspect-ratio:16/9; object-fit:cover; display:none;" alt="preview" />
+                            <p id="coverPlaceholder" class="text-secondary m-0">Chưa có ảnh. Tải ảnh đại diện cho bài viết.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button id="btnPick" class="btn btn-outline-secondary btn-sm" type="button">Chọn ảnh</button>
+                                <button id="btnRemove" class="btn btn-outline-secondary btn-sm" type="button">Xoá ảnh</button>
                             </div>
-                        </div>
-
-                        <div class="d-flex justify-content-end gap-2 mt-3 mb-5">
-                            <button id="btnSaveDraft2" class="btn btn-outline-secondary">Lưu nháp</button>
-                            <button id="btnPublish2" class="btn btn-dark">Xuất bản</button>
+                            <input id="coverInput" type="file" accept="image/*" hidden />
+                            </div>
                         </div>
                         </div>
                     </div>
+
+                    <div class="card card-rounded shadow-sm mb-4">
+                        <div class="card-body">
+                        <h5 class="card-title mb-3">Nội dung (Tiếng Việt)</h5>
+                        <div id="editorVI"></div>
+                        <div class="invalid-feedback d-block" id="errVI" style="display:none">Nhập nội dung tiếng Việt</div>
+                        </div>
+                    </div>
+
+                    <div class="card card-rounded shadow-sm mb-4">
+                        <div class="card-body">
+                        <h5 class="card-title mb-3">Content (English)</h5>
+                        <div id="editorEN"></div>
+                        <div class="invalid-feedback d-block" id="errEN" style="display:none">Nhập nội dung tiếng Anh</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2 mt-3 mb-5">
+                        <button id="btnPublish2" class="btn btn-dark">Xuất bản</button>
+                    </div>
+                    </div>
+                </div>
                 <!-- /.container-fluid -->
 
             </div>
