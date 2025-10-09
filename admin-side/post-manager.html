@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>SB Admin 2 - Dashboard</title>
-
+	<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/47.0.0/ckeditor5.css" crossorigin>
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -437,19 +437,21 @@
                     </div>
 
                     <div class="card card-rounded shadow-sm mb-4">
-                        <div class="card-body">
+                        <!-- <div class="card-body">
                         <h5 class="card-title mb-3">Nội dung (Tiếng Việt)</h5>
                         <div id="editorVI"></div>
                         <div class="invalid-feedback d-block" id="errVI" style="display:none">Nhập nội dung tiếng Việt</div>
-                        </div>
+                        </div> -->
+                        <div class="editor-container__editor"><div id="editorEN"></div></div>
                     </div>
 
                     <div class="card card-rounded shadow-sm mb-4">
-                        <div class="card-body">
+                        <!-- <div class="card-body">
                         <h5 class="card-title mb-3">Content (English)</h5>
                         <div id="editorEN"></div>
                         <div class="invalid-feedback d-block" id="errEN" style="display:none">Nhập nội dung tiếng Anh</div>
-                        </div>
+                        </div> -->
+                        <div class="editor-container__editor"><div id="editorVN"></div></div>
                     </div>
 
                     <div class="d-flex justify-content-end gap-2 mt-3 mb-5">
@@ -521,7 +523,7 @@
     <script src="js/demo/chart-pie-demo.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/47.0.0/ckeditor5.umd.js" crossorigin></script>
     <script src="./js/post-manager.js"></script>
 
 </body>
