@@ -10,21 +10,18 @@
     <meta name="author" content="">
 
     <title>SB Admin 2 - Dashboard</title>
-
+	<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/47.0.0/ckeditor5.css" crossorigin>
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome (optional) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/post-manager.css">
+    <link rel="stylesheet" href="./css/create-edit-post.css">
 
 </head>
 
@@ -55,15 +52,9 @@
             </li>
             <!-- Nav Item - Quản lý bài đăng -->
             <li class="nav-item active">
-                <a class="nav-link" href="post-manager.html">
+                <a class="nav-link" href="edit-create-post.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Quản lý bài đăng</span></a>
-            </li>
-            <!-- Nav Item - Chỉnh sửa/ Tạo mới bài viết -->
-            <li class="nav-item active">
-                <a class="nav-link" href="create-edit-post.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Tạo mới/chỉnh sửa bài đăng</span></a>
             </li>
 
             <!-- Divider -->
@@ -381,77 +372,91 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <div class="container-fluid my-4">
+                    <div class="col-lg-11 mx-auto">
+                    <div class="card card-rounded shadow-sm mb-4">
+                        <div class="card-body">
+                        <h5 class="card-title mb-3">Thông tin bài đăng</h5>
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Tạo bài viết mới</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <div class="mb-3">
+                            <label class="form-label">Tiêu đề</label>
+                            <input id="title" type="text" class="form-control" placeholder="Nhập tiêu đề bài viết" />
+                            <div class="invalid-feedback">Vui lòng nhập tiêu đề</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Đường dẫn (slug)</label>
+                            <input id="slug" type="text" class="form-control" placeholder="tu-dong-tao-theo-tieu-de" />
+                        </div>
+
+                        <!-- 2 selection inline -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                            <label class="form-label">Loại bài đăng</label>
+                            <select id="postType" class="form-select">
+                                <option value="">— Chọn loại —</option>
+                                <option value="type_1">type_1</option>
+                                <option value="type_2">type_2</option>
+                                <option value="type_3">type_3</option>
+                            </select>
+                            <div class="invalid-feedback">Chọn loại bài đăng</div>
+                            </div>
+                            <div class="col-md-6">
+                            <label class="form-label">Chuyên mục</label>
+                            <select id="category" class="form-select">
+                                <option value="">— Chọn chuyên mục —</option>
+                                <option>option_1</option>
+                                <option>option_2</option>
+                                <option>option_3</option>
+                                <option>option_4</option>
+                                <option>option_5</option>
+                                <option>option_6</option>
+                            </select>
+                            <div class="invalid-feedback">Chọn chuyên mục</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tags (ngăn cách bằng dấu phẩy)</label>
+                            <input id="tags" type="text" class="form-control" placeholder="VD: tag1, tag2, tag3" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Ảnh đại diện</label>
+                            <div class="p-3 text-center cover-drop">
+                            <img id="coverPreview" class="img-fluid rounded" style="aspect-ratio:16/9; object-fit:cover; display:none;" alt="preview" />
+                            <p id="coverPlaceholder" class="text-secondary m-0">Chưa có ảnh. Tải ảnh đại diện cho bài viết.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button id="btnPick" class="btn btn-outline-secondary btn-sm" type="button">Chọn ảnh</button>
+                                <button id="btnRemove" class="btn btn-outline-secondary btn-sm" type="button">Xoá ảnh</button>
+                            </div>
+                            <input id="coverInput" type="file" accept="image/*" hidden />
+                            </div>
+                        </div>
+                        </div>
                     </div>
 
-                    <div class="container-fluid py-12">
+                    <div class="card card-rounded shadow-sm mb-4">
+                        <!-- <div class="card-body">
+                        <h5 class="card-title mb-3">Nội dung (Tiếng Việt)</h5>
+                        <div id="editorVI"></div>
+                        <div class="invalid-feedback d-block" id="errVI" style="display:none">Nhập nội dung tiếng Việt</div>
+                        </div> -->
+                        <div class="editor-container__editor"><div id="editorEN"></div></div>
+                    </div>
 
-                        <div class="bg-white rounded-3 shadow-sm overflow-hidden">
+                    <div class="card card-rounded shadow-sm mb-4">
+                        <!-- <div class="card-body">
+                        <h5 class="card-title mb-3">Content (English)</h5>
+                        <div id="editorEN"></div>
+                        <div class="invalid-feedback d-block" id="errEN" style="display:none">Nhập nội dung tiếng Anh</div>
+                        </div> -->
+                        <div class="editor-container__editor"><div id="editorVN"></div></div>
+                    </div>
 
-                        <!-- Row 1 -->
-                        <div class="item p-3">
-                            <div class="d-flex align-items-start gap-3">
-                            <div class="avatar">IMG</div>
-                            <div class="flex-grow-1">
-                                <a href="#" class="post-title text-decoration-none">Tiêu đề bài viết</a>
-                                <div class="meta">By <a href="#" class="text-decoration-none">Nhung Phung</a> 10/10/2025</div>
-                                <div class="excerpt">Mô tả ngắn gọn </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
-                                <button class="btn btn-outline-danger icon-btn btn-delete" title="Delete"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                            </div>
-                        </div>
-
-                        <!-- Row 2 -->
-                        <div class="item p-3">
-                            <div class="d-flex align-items-start gap-3">
-                            <div class="avatar">IMG</div>
-                            <div class="flex-grow-1">
-                                <a href="#" class="post-title text-decoration-none">Tiêu đề bài viết</a>
-                                <div class="meta">By <a href="#" class="text-decoration-none">Nhung Phung</a> 10/10/2025</div>
-                                <div class="excerpt">Mô tả ngắn gọn </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
-                                <button class="btn btn-outline-danger icon-btn btn-delete" title="Delete"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                            </div>
-                        </div>
-
-                        <!-- Row 3 -->
-                        <div class="item p-3">
-                            <div class="d-flex align-items-start gap-3">
-                            <div class="avatar">IMG</div>
-                            <div class="flex-grow-1">
-                                <a href="#" class="post-title text-decoration-none">Tiêu đề bài viết</a>
-                                <div class="meta">By <a href="#" class="text-decoration-none">Nhung Phung</a> 10/10/2025</div>
-                                <div class="excerpt">Mô tả ngắn gọn </div>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-primary icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
-                                <button class="btn btn-outline-danger icon-btn btn-delete" title="Delete"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                            </div>
-                        </div>
-
-                        <!-- Simple pagination (optional) -->
-                        <div class="p-2 border-top bg-light">
-                            <ul class="pagination pagination-sm m-0 justify-content-end">
-                            <li class="page-item disabled"><span class="page-link">Prev</span></li>
-                            <li class="page-item active"><span class="page-link">1</span></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                            </ul>
-                        </div>
-                        </div>
+                    <div class="d-flex justify-content-end gap-2 mt-3 mb-5">
+                        <button id="btnPublish2" class="btn btn-dark">Xuất bản</button>
+                    </div>
                     </div>
                 </div>
                 <!-- /.container-fluid -->
@@ -516,6 +521,10 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/47.0.0/ckeditor5.umd.js" crossorigin></script>
+    <script src="./js/create-edit-post.js"></script>
 
 </body>
 
