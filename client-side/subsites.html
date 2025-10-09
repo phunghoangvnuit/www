@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Web Fonts -->
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+    <!-- Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Customized Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pages/subsites.css">
+    <link rel="stylesheet" href="./css/components/navbar.css">
+    <link rel="stylesheet" href="./css/components/spinner.css">
+    <link rel="stylesheet" href="./css/components/sidebar.css">
+    <link rel="stylesheet" href="./css/components/carousel.css">
+    <link rel="stylesheet" href="./css/components/blog-card.css">
+    <link rel="Stylesheet" href="./css/components/blog-stream.css">
+    <link rel="stylesheet" href="./css/components/form-modal.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+</head>
+<body>
+  <!-- ======= Nút Back to Top (TOP) ======= -->
+  <div id="spinner" class="show w-100 vh-75 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+      <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+
+  <!-- ======= Thanh điều hướng chính (main-nav) ======= -->
+  <div class="container-fluid fixed-top">
+      <div class="container-fluid px-0">
+          <nav class="navbar navbar-light bg-white navbar-expand-xl">
+              <div class="nav-left">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" style="margin: 0; padding: 0;"><h1 class="display-6">NhungPhung</h1></a>      
+                <!-- Button xổ xuống - active trên màn hình nhỏ -->
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Phùng</strong><br><i>(About me)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Chuyện Phùng</strong><br><i>(Cover Story)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Lữ Phùng</strong><br><i>(Travel)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Sống Phùng</strong><br><i>(Lifestyle)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Vị Phùng</strong><br><i>(Food)</i>
+                        </a>
+                        <a href="#" class="nav-item nav-link text-center">
+                          <strong>Phùng Thời</strong><br><i>(News)</i>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div class="nav-right">
+                <!-- Menu thay đổi ngôn ngữ -->
+                <div class="dropdown language-selector">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-globe"></i> Language
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
+                <!-- PC Search - active cho màn hình lớn -->
+                <div class="searchbar">
+                    <i class="fa fa-search" style="color: var(--primary);" aria-hidden="true"></i>
+                     <div class="togglesearch">
+                      <div class="pc-search position-relative mx-auto">
+                        <input class="form-control w-100 py-2 px-3" type="text" placeholder="Search">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-4 position-absolute text-white h-100" style="top: 0; right: -10px"><i class="fas fa-search text-white"></i></button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+  <!-- ======= Phần Nội dung ======= -->
+  <div class="body-content-container">
+    <!-- Mobile Search - active cho màn hình nhỏ -->
+    <div class="mobile-search position-relative mx-auto">
+        <input class="form-control border-2 border-secondary w-100 py-2 px-3 rounded-pill" type="text" placeholder="Search">
+        <button type="submit" class="btn btn-primary border-0 border-secondary py-2 px-3 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;"><i class="fas fa-search text-white"></i></button>
+    </div>
+
+    <div class="main-content">
+    <div class="hot-news"><strong>Breaking News:</strong> Discover these Waterproof and Rugged Smartphones that Go on Sale</div>
+    <!-- Feature -->
+    <section class="news-feature container">
+      <div class="row g-4 align-items-stretch">
+        <!-- Left big feature -->
+        <div class="col-lg-7">
+          <article class="feature-main h-100">
+            <img src="./img/blog-stream-3.jpg" alt="Feature Image">
+            <div class="feature-overlay"></div>
+            <div class="feature-content">
+              <div class="d-flex gap-2 mb-2">
+                <span class="category-badge tech">TECH</span>
+                <span class="exclusive-badge">EXCLUSIVE</span>
+              </div>
+              <h3>Discover these Waterproof and Rugged Smartphones that Go on Sale</h3>
+              <p>I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively effect your body, but alchemizing...</p>
+            </div>
+          </article>
+        </div>
+        <!-- Right 4 smaller cards as a 2×2 grid -->
+        <div class="col-lg-5">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <article class="card h-100 border-0 side-card">
+                <div class="ratio ratio-16x9 rounded">
+                  <img src="https://picsum.photos/seed/alps/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                </div>
+                <div class="card-body px-0">
+                  <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
+                  <h5 class="card-title mb-0">New Soundboard Review: Pricing is Not Always the Only Criteria</h5>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card h-100 border-0 side-card">
+                <div class="ratio ratio-16x9 rounded">
+                  <img src="https://picsum.photos/seed/waterfall/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                </div>
+                <div class="card-body px-0">
+                  <div class="text-uppercase text-success fw-bold small mb-1">TECH <span class="badge bg-success ms-1">EXCLUSIVE</span></div>
+                  <h5 class="card-title mb-0">Computers Climb the List of the Top Gadgets in Forbes Magazine</h5>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card h-100 border-0 side-card">
+                <div class="ratio ratio-16x9 rounded">
+                  <img src="https://picsum.photos/seed/coffee/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                </div>
+                <div class="card-body px-0">
+                  <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
+                  <h5 class="card-title mb-0">Technology Will Help Keep Your Smartphone from Becoming Obsolete</h5>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card h-100 border-0 side-card">
+                <div class="ratio ratio-16x9 rounded">
+                  <img src="https://picsum.photos/seed/mask/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                </div>
+                <div class="card-body px-0">
+                  <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
+                  <h5 class="card-title mb-0">Hottest Wearable Tech and Smart Gadgets of 2022 Will Blow Your Mind</h5>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- LIST -->
+      <div class="col-lg-12 list-news">
+        <!-- Post 1 -->
+        <article class="post-item">
+          <div class="d-md-flex gap-3">
+            <img class="post-thumb mb-3 mb-md-0" src="https://picsum.photos/seed/celeb21/640/400" alt="Kristen Stewart">
+            <div>
+              <span class="exclusive-badge mb-2">EXCLUSIVE</span>
+              <h2 class="h4 post-title"><a class="link-dark text-decoration-none" href="#">Kristen Stewart Visits the Toronto Film Festival with New Boyfriend</a></h2>
+              <div class="post-meta">Celebrity · <a href="#" class="link-secondary text-decoration-none">rik</a> – 31 July 2025</div>
+              <p class="mt-2 mb-0 text-secondary">I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively...</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post 2 -->
+        <article class="post-item">
+          <div class="d-md-flex gap-3">
+            <img class="post-thumb mb-3 mb-md-0" src="https://picsum.photos/seed/celeb22/640/400" alt="Makeup Tricks">
+            <div>
+              <span class="exclusive-badge mb-2">EXCLUSIVE</span>
+              <h2 class="h4 post-title"><a class="link-dark text-decoration-none" href="#">Celebrity Make-up Artist Glenny Meyers Shows you Her Beauty Tricks</a></h2>
+              <div class="post-meta">Celebrity · <a href="#" class="link-secondary text-decoration-none">rik</a> – 31 July 2025</div>
+              <p class="mt-2 mb-0 text-secondary">I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively...</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post 3 -->
+        <article class="post-item">
+          <div class="d-md-flex gap-3">
+            <img class="post-thumb mb-3 mb-md-0" src="https://picsum.photos/seed/celeb23/640/400" alt="Ranches of California">
+            <div>
+              <span class="exclusive-badge mb-2">EXCLUSIVE</span>
+              <h2 class="h4 post-title"><a class="link-dark text-decoration-none" href="#">The Biggest Hollywood Celebrities Visit the Ranches of California</a></h2>
+              <div class="post-meta">Celebrity · <a href="#" class="link-secondary text-decoration-none">rik</a> – 31 July 2025</div>
+              <p class="mt-2 mb-0 text-secondary">I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively...</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post 4 -->
+        <article class="post-item">
+          <div class="d-md-flex gap-3">
+            <img class="post-thumb mb-3 mb-md-0" src="https://picsum.photos/seed/celeb24/640/400" alt="New Year Parties">
+            <div>
+              <span class="exclusive-badge mb-2">EXCLUSIVE</span>
+              <h2 class="h4 post-title"><a class="link-dark text-decoration-none" href="#">Fashion Finder: Biggest Shows, Parties and Celebrity for New Years</a></h2>
+              <div class="post-meta">Celebrity · <a href="#" class="link-secondary text-decoration-none">rik</a> – 31 July 2025</div>
+              <p class="mt-2 mb-0 text-secondary">I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively...</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post 5 -->
+        <article class="post-item">
+          <div class="d-md-flex gap-3">
+            <img class="post-thumb mb-3 mb-md-0" src="https://picsum.photos/seed/celeb25/640/400" alt="Name list">
+            <div>
+              <span class="exclusive-badge mb-2">EXCLUSIVE</span>
+              <h2 class="h4 post-title"><a class="link-dark text-decoration-none" href="#">The Most Popular Celebrity Name List of the Millennium is Here</a></h2>
+              <div class="post-meta">Celebrity · <a href="#" class="link-secondary text-decoration-none">rik</a> – 31 July 2025</div>
+              <p class="mt-2 mb-0 text-secondary">I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively...</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post 6 -->
+        <article class="post-item">
+          <div class="d-md-flex gap-3">
+            <img class="post-thumb mb-3 mb-md-0" src="https://picsum.photos/seed/celeb26/640/400" alt="Investments">
+            <div>
+              <span class="exclusive-badge mb-2">EXCLUSIVE</span>
+              <h2 class="h4 post-title"><a class="link-dark text-decoration-none" href="#">Silicon Valley Stunned by the Fulminant Slashed Investments</a></h2>
+              <div class="post-meta">EXCLUSIVE · <a href="#" class="link-secondary text-decoration-none">rik</a> – 31 July 2025</div>
+              <p class="mt-2 mb-0 text-secondary">I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively...</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pagination -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <nav aria-label="Page navigation">
+            <ul class="pagination pagination-clean mb-0">
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">&rsaquo;</a></li>
+            </ul>
+          </nav>
+          <p class="text-secondary small mb-0">Page 1 of 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Phần thanh bên ======= -->
+    <aside class="sidebar">
+        <div class="article-item">
+            <img src="./img/food-1.jpg" alt="Mountain town" class="article-image">
+            <div class="article-content">
+                <div>
+                    <span class="category-badge">CELEBRITY</span>
+                </div>
+                <a href="#" class="article-title"><span class="category-badge exclusive-badge">EXCLUSIVE</span>Fashion Finder: Biggest Shows, Parties</a>
+                <div class="article-meta">
+                    <span class="author">Rik</span>
+                    <span class="date">31 July 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-item">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nhungphung_official/video/7543930721870564615" data-video-id="7543930721870564615" style="max-width: 180px;min-width: 180px; max-height: 230px;" > <section> <a target="_blank" title="@nhungphung_official" href="https://www.tiktok.com/@nhungphung_official?refer=embed">@nhungphung_official</a> 🇫🇷✨ 𝐄𝐢𝐟𝐟𝐞𝐥 𝐓𝐨𝐰𝐞𝐫 𝐟𝐮𝐥𝐥 𝐜𝐨𝐦𝐛𝐨 𝐜𝐡𝐞𝐜𝐤! 🚶‍♀️𝐿𝑒𝑜 𝑡ℎ𝑎𝑛𝑔 𝑏𝑜̣̂ 𝑐𝑢̛̣𝑐 𝑐ℎ𝑖𝑙𝑙 🚤 𝑁𝑔𝑎̆́𝑚 𝑡𝑢̛̀ 𝑠𝑜̂𝑛𝑔 𝑆𝑒𝑖𝑛𝑒 𝑙𝑎̃𝑛𝑔 𝑚𝑎̣𝑛 🌍 𝑉𝑖𝑒𝑤 𝑡𝑟𝑒̂𝑛 𝑐𝑎𝑜 𝑏𝑎𝑜 𝑞𝑢𝑎́𝑡 𝑃𝑎𝑟𝑖𝑠 💙 𝑀𝑜̣̂𝑡 𝑃𝑎𝑟𝑖𝑠 𝑘ℎ𝑜̂𝑛𝑔 𝑡ℎ𝑒̂̉ 𝑏𝑜̉ 𝑙𝑜̛̃! <a title="nhungphung" target="_blank" href="https://www.tiktok.com/tag/nhungphung?refer=embed">#NhungPhung</a> <a title="eiffeltower" target="_blank" href="https://www.tiktok.com/tag/eiffeltower?refer=embed">#EiffelTower</a> <a title="paristrip" target="_blank" href="https://www.tiktok.com/tag/paristrip?refer=embed">#ParisTrip</a> <a title="dulichphap" target="_blank" href="https://www.tiktok.com/tag/dulichphap?refer=embed">#DuLichPhap</a> <a title="parisvibes" target="_blank" href="https://www.tiktok.com/tag/parisvibes?refer=embed">#ParisVibes</a> <a target="_blank" title="♬ nhạc nền  - NhungPhung_Offical" href="https://www.tiktok.com/music/nhạc-nền-NhungPhungOffical-7543930740237454096?refer=embed">♬ nhạc nền  - NhungPhung_Offical</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            <div class="article-content">
+              <div>
+                  <span class="category-badge">CELEBRITY</span>
+              </div>
+              <a href="#" class="article-title"><span class="category-badge exclusive-badge">EXCLUSIVE</span>Fashion Finder: Biggest Shows, Parties</a>
+              <div class="article-meta">
+                  <span class="author">Rik</span>
+                  <span class="date">31 July 2025</span>
+              </div>
+          </div>
+        </div>
+
+        <div class="article-item">
+            <img src="./img/food-4.jpg" alt="Mountain town" class="article-image">
+            <div class="article-content">
+                <div>
+                    <span class="category-badge">CELEBRITY</span>
+                </div>
+                <a href="#" class="article-title"><span class="category-badge exclusive-badge">EXCLUSIVE</span>Fashion Finder: Biggest Shows, Parties</a>
+                <div class="article-meta">
+                    <span class="author">Rik</span>
+                    <span class="date">31 July 2025</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) ======= -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-100 mx-auto d-flex">
+                      <form action="" class="">
+                          <input type="text" class="w-100 form-control border-1 py-3 mb-4 inputform" placeholder="Họ và tên">
+                          <input type="email" class="w-100 form-control border-1 py-3 mb-4 inputform" placeholder="Email của bạn">
+                          <textarea class="w-100 form-control border-1 mb-4 inputform" rows="5" cols="10" placeholder="Lời nhắn cho NhungPhung"></textarea>
+                          <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary inputform" type="submit">Submit</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ======= Phần Chân trang ======= -->
+  <div class="footer">
+    <!-- Footer-Top: Khối trên Bao gồm 4 cột -->
+    <div class="footer-top row">
+
+      <!-- Cột 1: Follow us (Breeze) -> Theo dõi -->
+      <div class="col-12 col-lg-3 footer-top-column social-contacts">
+        <h3 class="footer-title">Theo dõi</h3>
+        <hr/>
+        <ul class="list-unstyled">
+          <a href="https://www.facebook.com/nhungphungblog" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nhung_phung_official"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@NhungPhungBlog"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@nhungphung_official"><i class="fa-brands fa-tiktok"></i></a>
+        </ul>
+      </div>
+
+      <!-- Cột 2: Company (Breeze) -> Menu -->
+      <div class="col-12 col-lg-3 footer-top-column company-links">
+        <h3 class="footer-title">Menu</h3>
+        <hr/>
+        <ul class="list-unstyled">
+          <li><a href="#">Phùng</a></li>
+          <li><a href="#">Chuyện Phùng</a></li>
+          <li><a href="#">Lữ Phùng</a></li>
+          <li><a href="#">Sống Phùng</a></li>
+          <li><a href="#">Vị Phùng</a></li>
+          <li><a href="#">Phùng Thời</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Latest news (Breeze) -> Collab -->
+      <div class="col-12 col-lg-3 footer-top-column collab">
+        <h3 class="footer-title">Hợp tác</h3>
+        <hr/>
+        <div class="info">
+          <p><i class="fas fa-globe"></i> <a href="#">nhungphung.com</a></p>
+          <p><i class="far fa-envelope"></i> contact: nhungphung@gmail.com</p>
+          <button class="collab-button" data-bs-toggle="modal" data-bs-target="#formModal">Hợp tác</button>
+        </div>
+      </div>
+
+      <!-- Cột 4: Popular news (Breeze) -> Tin Hot -->
+      <div class="col-12 col-lg-3 footer-top-column popular-news">
+        <h3 class="footer-title">Tin Hot</h3>
+        <hr/>
+        <div class="news-items">
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-Mid: Khối giữa bao gồm logo + menu điều hướng phụ -->
+    <div class="footer-mid">
+      <!-- Logo -->
+      <div class="d-flex align-items-center gap-4">
+        <div class="brand-mark">NhungPhung</div>
+        <div>
+          <div class="fw-semibold brand-sub1">BLOGGER</div>
+          <div class="brand-sub2 text-muted">TASTE | TRAVEL | LIFESTYLE</div>
+        </div>
+      </div>
+      <!-- Menu điều hướng phụ -->
+      <ul class="nav justify-content-center footer-nav">
+        <li class="nav-item"><a class="nav-link px-2" href="#">About me</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Cover Story</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Travel</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Lifestyle</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Food</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">News</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer-Bottom: Khối dưới là copyright -->
+    <div class="footer-bottom">
+        © 2025 Phung Nhung. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- Nút Back to Top (BOTTOM) -->
+  <a href="#" class="btn border-3 rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>  
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Customized Script -->
+  <script src="./js/main.js"></script>
+  <script src="./js/searchbar.js"></script>
+</body>
+</html>
