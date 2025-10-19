@@ -28,6 +28,11 @@
   .hot-news strong{
     font-size: 21px;
   }
+
+  .togglesearch{
+  right: -42px;
+  width: 1414px;
+  }
 }
 
 @media (max-width: 1600px){
@@ -60,6 +65,11 @@
   .hot-news strong{
     font-size: 21px;
   }
+
+  .togglesearch{
+  right: -42px;
+  width: 1345px;
+  }
 }
 
 @media (max-width: 1440px){
@@ -91,6 +101,11 @@
   }
   .hot-news strong{
     font-size: 18px;
+  }
+
+  .togglesearch{
+  right: -42px;
+  width: 1204px;
   }
 }
 
@@ -160,6 +175,11 @@
   .hot-news strong{
     font-size: 18px;
   }
+
+  .togglesearch{
+  right: -42px;
+  width: 1170px;
+  }
 }
 
 @media (max-width: 1366px){
@@ -191,6 +211,11 @@
   }
   .hot-news strong{
     font-size: 18px;
+  }
+
+  .togglesearch{
+  right: -42px;
+  width: 1142px;
   }
 }
 
@@ -224,6 +249,11 @@
   .hot-news strong{
     font-size: 18px;
   }
+
+  .togglesearch{
+  right: -42px;
+  width: 1137px;
+  }
 }
 
 @media (max-width: 1280px){
@@ -255,6 +285,10 @@
   }
   .hot-news strong{
     font-size: 18px;
+  }
+  .togglesearch{
+  right: -42px;
+  width: 1068px;
   }
 }
 

@@ -101,7 +101,7 @@ margin-bottom: 21px;
 .pc-search input{
 border: 2px solid var(--primary-darker) !important;
 padding-right: 54px !important;
-width: 1510px !important;
+width: 100% !important;
 height: 63px;
 box-shadow: 0 0 7px rgba(0,0,0,0.28);
 }
@@ -112,8 +112,8 @@ position: relative;
 /* background: var(--light); */
 position: absolute;
 top: 50px;
-right: -17px;
-width: 1520px;
+right: -42px;
+width: 1528px;
 height: 60px;
 line-height: 60px;
 /* box-shadow: 0 0 7px rgba(0,0,0,0.28); */
@@ -121,7 +121,7 @@ line-height: 60px;
 display: none;
 padding: 7px;
 }
-.togglesearch:before{
+/* .togglesearch:before{
 content: "";
 position: absolute;
 top: -21px;
@@ -130,7 +130,7 @@ border-left: 12px solid transparent;
 border-right: 12px solid transparent;
 border-top: 14px solid transparent;
 border-bottom: 14px solid var(--primary);
-}
+} */
 .search-container{
 display: flex;
 flex-direction: row;
