@@ -46,6 +46,7 @@ flex-shrink: 0;
 }
 .article-content {
 flex: 1;
+width: 140px;
 }
 .category-badge {
 display: inline-block;

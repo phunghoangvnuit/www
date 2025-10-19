@@ -14,11 +14,6 @@ color: var(--primary);
   margin-bottom: 30px;
   font-style: italic;
 }
-.block .article img{
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
-}
 
 /* ======= Mobile Search ======= */
 .mobile-search{
@@ -29,4 +24,3 @@ gap: 8px;
 flex: 1;
 border: 2px solid var(--primary-darker) !important;
 }
-
