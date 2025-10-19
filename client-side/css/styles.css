@@ -38,6 +38,24 @@ width: 1215px;
 width: 300px;
 margin-left: 21px;
 }
+.hot-news{
+font-size: 16px;
+font-family: "Roboto";
+}
+.hot-news strong{
+font-family: "EB Garamond";
+font-size: 21px;
+color: var(--primary);
+}
+#news-text {
+  display: inline-block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  will-change: transform, opacity;
+}
+#news-text.fade-out {
+  opacity: 0;
+  transform: translateY(-6px);
+}
 
 /* Responsive */
 @media (max-width: 1268px){

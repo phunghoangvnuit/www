@@ -1,18 +1,3 @@
-.body-content-container{
-font-family: "Roboto";
-margin-top: 105px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-.main-content{
-width: 1200px;
-}
-.sidebar{
-width: 300px;
-margin-left: 21px;
-}
-
 .hot-news{
 font-size: 16px;
 font-family: "Roboto";

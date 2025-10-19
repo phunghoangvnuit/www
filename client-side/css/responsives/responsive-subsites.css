@@ -143,6 +143,10 @@
   .sidebar{
     margin-top: 48px;
   }
+
+  .news-feature h5{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1400px){
@@ -216,6 +220,10 @@
   .togglesearch{
   right: -42px;
   width: 1142px;
+  }
+
+  .news-feature h5{
+    font-size: 13px;
   }
 }
 
@@ -349,5 +357,15 @@
   }
   .hot-news strong{
     font-size: 18px;
+  }
+
+  .feature-main{
+    height: 480px !important;
+  }
+  .feature-main h3{
+    font-size: 22px;
+  }
+  .feature-main p{
+    font-size: 14px;
   }
 }
