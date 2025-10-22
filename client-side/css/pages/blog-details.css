@@ -1,6 +1,4 @@
-/* Content-container */
 .body-content-container{
-  /* margin: 124px; */
   margin-top: 140px;
 }
 .content-container{
@@ -58,7 +56,6 @@
   color: var(--primary);
 }
 
-/* Social-sharing */
 .sharing-icon{
   display: flex;
   flex-direction: column;
@@ -75,58 +72,7 @@
   justify-content: center;
 }
 
-/* Responsive: kích thước điện thoại */
-@media (max-width: 1068px){
-  .body-left { display: none; }
-}
-@media (max-width: 768px){
-  .search-box { display: none; }
-  .mobile-search{ display: initial; }  /* Hiện thanh mobile-search */
-  .body-right h1{
-    font-size: 24px;
-    width: 567px;
-  }
-  .body-right .content-info{
-    font-size: 14px;
-  }
-  .body-right .content-body{
-    font-size: 14px;
-    width: 550px;
-  }
-  .body-right .content-body{
-    width: 550px;
-  }
-}
-@media (max-width: 468px){
-  .body-right h1{
-    font-size: 18px;
-    width: 322px;
-  }
-  .body-right .content-info{
-    font-size: 12px;
-  }
-  .body-right .content-body{
-    font-size: 12px;
-    width: 350px;
-  }
-  .body-right .content-body img{
-    width: 350px;
-  }
-}
-@media (max-width: 428px){
-  .body-right h1{
-    font-size: 16px;
-    width: 322px;
-  }
-  .body-right .content-info{
-    font-size: 12px;
-  }
-  .body-right .content-body{
-    font-size: 12px;
-    width: 320px;
-  }
-  .body-right .content-body img{
-    width: 320px;
-  }
-}
+
+
+
 

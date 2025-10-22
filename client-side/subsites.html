@@ -51,11 +51,11 @@
       <div class="spinner-grow text-primary" role="status"></div>
   </div>
 
-  <!-- ======= Thanh điều hướng chính cho pc  (main-nav-pc) ======= -->
-  <div class="container-fluid fixed-top">
+  <!-- ======= Thanh điều hướng chính cho pc (main-nav-pc) ======= -->
+  <div class="pc-nav container-fluid fixed-top">
       <div class="container-fluid px-0">
           <nav class="navbar navbar-light bg-white navbar-expand-xl">
-              <div class="nav-left">
+              <div class="nav-left navbar navbar-light bg-white navbar-expand-xl">
                 <!-- Logo -->
                 <a href="index.html" class="navbar-brand" style="margin: 0; padding: 0;"><h1 class="display-6">NhungPhung</h1></a>      
                 <!-- Button xổ xuống - active trên màn hình nhỏ -->
@@ -126,24 +126,6 @@
           <!-- Navigation Links -->
           <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
-              <a href="#" class="nav-item nav-link text-center">
-                <strong>Phùng</strong><br><i>(About me)</i>
-              </a>
-              <a href="#" class="nav-item nav-link text-center">
-                <strong>Chuyện Phùng</strong><br><i>(Cover Story)</i>
-              </a>
-              <a href="#" class="nav-item nav-link text-center">
-                <strong>Lữ Phùng</strong><br><i>(Travel)</i>
-              </a>
-              <a href="#" class="nav-item nav-link text-center">
-                <strong>Sống Phùng</strong><br><i>(Lifestyle)</i>
-              </a>
-              <a href="#" class="nav-item nav-link text-center">
-                <strong>Vị Phùng</strong><br><i>(Food)</i>
-              </a>
-              <a href="#" class="nav-item nav-link text-center">
-                <strong>Phùng Thời</strong><br><i>(News)</i>
-              </a>
               <a href="#" class="nav-item-mobile nav-link text-center">
                 <strong>Phùng</strong><i> (About me)</i>
               </a>
@@ -176,88 +158,89 @@
     </div>
 
     <div class="main-content">
-    <div class="hot-news"><strong>Breaking News:</strong> Discover these Waterproof and Rugged Smartphones that Go on Sale</div>
+    <!-- Breaking News -->
+      <div class="hot-news"><strong>Breaking News:</strong> <span id="news-text"></span></div>
     <!-- Feature -->
-    <section class="news-feature container">
-      <div class="row g-4 align-items-stretch">
-        <!-- Left big feature -->
-        <div class="col-lg-7">
-          <a href="https://google.com.vn">
-            <article class="feature-main h-100">
-              <img src="./img/blog-stream-3.jpg" alt="Feature Image">
-              <div class="feature-overlay"></div>
-              <div class="feature-content">
-                <div class="d-flex gap-2 mb-2">
-                  <span class="category-badge tech">TECH</span>
-                  <span class="exclusive-badge">EXCLUSIVE</span>
+      <section class="news-feature container">
+        <div class="row g-4 align-items-stretch">
+          <!-- Left big feature -->
+          <div class="col-lg-7">
+            <a href="https://google.com.vn">
+              <article class="feature-main h-100">
+                <img src="./img/blog-stream-3.jpg" alt="Feature Image">
+                <div class="feature-overlay"></div>
+                <div class="feature-content">
+                  <div class="d-flex gap-2 mb-2">
+                    <span class="category-badge tech">TECH</span>
+                    <span class="exclusive-badge">EXCLUSIVE</span>
+                  </div>
+                  <h3>Discover these Waterproof and Rugged Smartphones that Go on Sale</h3>
+                  <p>I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively effect your body, but alchemizing...</p>
                 </div>
-                <h3>Discover these Waterproof and Rugged Smartphones that Go on Sale</h3>
-                <p>I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively effect your body, but alchemizing...</p>
+              </article>
+            </a>
+          </div>
+          <!-- Right 4 smaller cards as a 2×2 grid -->
+          <div class="col-lg-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <article class="card h-100 border-0 side-card">
+                  <a href="https://google.com.vn">
+                    <div class="ratio ratio-16x9 rounded">
+                      <img src="https://picsum.photos/seed/alps/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                    </div>
+                  </a>
+                  <div class="card-body px-0">
+                    <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
+                    <h5 class="card-title mb-0">New Soundboard Review: Pricing is Not Always the Only Criteria</h5>
+                  </div>
+                </article>
               </div>
-            </article>
-          </a>
-        </div>
-        <!-- Right 4 smaller cards as a 2×2 grid -->
-        <div class="col-lg-5">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <article class="card h-100 border-0 side-card">
-                <a href="https://google.com.vn">
-                  <div class="ratio ratio-16x9 rounded">
-                    <img src="https://picsum.photos/seed/alps/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+              <div class="col">
+                <article class="card h-100 border-0 side-card">
+                  <a href="https://google.com.vn">
+                    <div class="ratio ratio-16x9 rounded">
+                      <img src="https://picsum.photos/seed/waterfall/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                    </div>
+                  </a>
+                  <div class="card-body px-0">
+                    <div class="text-uppercase text-success fw-bold small mb-1">TECH <span class="badge bg-success ms-1">EXCLUSIVE</span></div>
+                    <h5 class="card-title mb-0">Computers Climb the List of the Top Gadgets in Forbes Magazine</h5>
                   </div>
-                </a>
-                <div class="card-body px-0">
-                  <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
-                  <h5 class="card-title mb-0">New Soundboard Review: Pricing is Not Always the Only Criteria</h5>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article class="card h-100 border-0 side-card">
-                <a href="https://google.com.vn">
-                  <div class="ratio ratio-16x9 rounded">
-                    <img src="https://picsum.photos/seed/waterfall/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                </article>
+              </div>
+              <div class="col">
+                <article class="card h-100 border-0 side-card">
+                  <a href="https://google.com.vn">
+                    <div class="ratio ratio-16x9 rounded">
+                      <img src="https://picsum.photos/seed/coffee/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                    </div>
+                  </a>
+                  <div class="card-body px-0">
+                    <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
+                    <h5 class="card-title mb-0">Technology Will Help Keep Your Smartphone from Becoming Obsolete</h5>
                   </div>
-                </a>
-                <div class="card-body px-0">
-                  <div class="text-uppercase text-success fw-bold small mb-1">TECH <span class="badge bg-success ms-1">EXCLUSIVE</span></div>
-                  <h5 class="card-title mb-0">Computers Climb the List of the Top Gadgets in Forbes Magazine</h5>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article class="card h-100 border-0 side-card">
-                <a href="https://google.com.vn">
-                  <div class="ratio ratio-16x9 rounded">
-                    <img src="https://picsum.photos/seed/coffee/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                </article>
+              </div>
+              <div class="col">
+                <article class="card h-100 border-0 side-card">
+                  <a href="https://google.com.vn">
+                    <div class="ratio ratio-16x9 rounded">
+                      <img src="https://picsum.photos/seed/mask/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
+                    </div>
+                  </a>
+                  <div class="card-body px-0">
+                    <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
+                    <h5 class="card-title mb-0">Hottest Wearable Tech and Smart Gadgets of 2022 Will Blow Your Mind</h5>
                   </div>
-                </a>
-                <div class="card-body px-0">
-                  <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
-                  <h5 class="card-title mb-0">Technology Will Help Keep Your Smartphone from Becoming Obsolete</h5>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article class="card h-100 border-0 side-card">
-                <a href="https://google.com.vn">
-                  <div class="ratio ratio-16x9 rounded">
-                    <img src="https://picsum.photos/seed/mask/640/400" class="w-100 h-100 object-fit-cover rounded" alt="Post">
-                  </div>
-                </a>
-                <div class="card-body px-0">
-                  <div class="text-uppercase text-success fw-bold small mb-1">TECH</div>
-                  <h5 class="card-title mb-0">Hottest Wearable Tech and Smart Gadgets of 2022 Will Blow Your Mind</h5>
-                </div>
-              </article>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     
-    <!-- LIST -->
+    <!-- List Blog-->
       <div class="col-lg-12 list-news">
         <!-- Post 1 -->
         <article class="post-item">

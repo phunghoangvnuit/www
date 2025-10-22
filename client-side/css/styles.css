@@ -57,6 +57,16 @@ color: var(--primary);
   transform: translateY(-6px);
 }
 
+ /* ======= Mobile Search ======= */
+.mobile-search{
+display: none;
+gap: 8px;
+}
+.mobile-search input{
+flex: 1;
+border: 2px solid var(--primary-darker) !important;
+}
+
 /* Responsive */
 @media (max-width: 1268px){
 .navbar-nav .nav-link {
