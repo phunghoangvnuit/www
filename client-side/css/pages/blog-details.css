@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 84px;
 }
 .content-container .body-left{
   padding: 0;
-  height: 600px;
+  height: 100%;
 }
 .content-container .body-right{
   display: flex;
@@ -50,10 +51,12 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.3s;
+  border: 1px solid var(--light);
 }
 .affiliate button:hover{
   background: var(--light);
   color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .sharing-icon{
@@ -61,7 +64,7 @@
   flex-direction: column;
   gap: 7px;
   position: sticky;
-  top: 140px;
+  top: 180px;
 }
 .sharing-icon a{
   width: 42px;

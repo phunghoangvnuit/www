@@ -285,7 +285,8 @@
   }
 
   .comment-container{
-    display: none;
+    width: 700px;
+    padding: 0;
   }
 }
 
@@ -303,5 +304,14 @@
   }
   .body-right .content-body img{
     width: 340px;
+  }
+  .comment-container{
+    width: 340px;
+    padding: 0;
+  }
+  .be-comment-name, .be-comment-time {
+    font-size: 12px;
+    font-weight: 700;
+    flex-direction: column;
   }
 }

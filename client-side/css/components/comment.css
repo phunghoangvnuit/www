@@ -1,5 +1,5 @@
 .comment-container{
-width: 1000px;
+width: 1200px;
 }
 
 .comment-container h1{
@@ -38,10 +38,12 @@ object-fit: cover;
 margin-left: 80px;
 }
 
-.be-comment-content span {
-display: inline-block;
-width: 49%;
+.be-comment-content div {
+display: flex;
+flex-direction: row;
 margin-bottom: 15px;
+align-items: center;
+gap: 3px;
 }
 
 .be-comment-name {
