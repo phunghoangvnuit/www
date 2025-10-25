@@ -72,7 +72,7 @@ margin-bottom: 8px;
 text-decoration: none;
 }
 .article-title:hover {
-color: #309b65;
+color: var(--primary);
 }
 .article-meta {
 font-size: 11px;
