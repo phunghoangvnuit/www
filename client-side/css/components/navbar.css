@@ -34,6 +34,10 @@ font-size: 14px;
 transition: .5s;
 color: var(--dark);
 }
+.nav-item.nav-link.active {
+  color: var(--primary);
+  border-bottom: 3px solid;
+}
 .navbar {
 height: 100px;
 border-bottom: 1px solid rgba(255, 255, 255, .1);
