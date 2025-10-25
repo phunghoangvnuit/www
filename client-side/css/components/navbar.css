@@ -33,6 +33,7 @@ padding: 10px 8px;
 font-size: 14px;
 transition: .5s;
 color: var(--dark);
+border-bottom: 3px solid var(--light);
 }
 .nav-item.nav-link.active {
   color: var(--primary);
