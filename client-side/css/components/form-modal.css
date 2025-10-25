@@ -17,3 +17,6 @@ align-items: center;
 .inputform {
 width: 500px !important;
 }
+#formModal .border-secondary {
+border-color: var(--primary) !important;
+}

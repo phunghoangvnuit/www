@@ -21,6 +21,7 @@
   width: 714px;
   font-size: 35px;
   text-align: center;
+  color: var(--dark) !important;
 }
 .body-right .content-info{
   text-align: center;
@@ -70,9 +71,15 @@
   width: 42px;
   height: 42px;
   border-radius: 25px;
+  border-color: var(--dark) !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--dark) !important;
+}
+.sharing-icon a:hover{
+  color: var(--light) !important;
+  background-color: var(--dark) !important; 
 }
 
 
