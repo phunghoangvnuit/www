@@ -2,6 +2,9 @@
   .body-content-container{
     width: 85%;
   }
+  .navbar-nav a{
+    width: auto;
+  }
   .nav-left{
     width: 66% !important;
   }

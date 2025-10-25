@@ -46,7 +46,18 @@ font-family: "Roboto";
 letter-spacing: 0.7px;
 }
 .navbar-nav{
-gap: 50px;
+gap: 49px;
+}
+.navbar-nav a{
+width: 120px;
+}
+.nav-item strong {
+display: inline-block;
+transition: opacity 0.3s ease;
+opacity: 1;
+}
+.nav-item strong.fade-out {
+opacity: 0;
 }
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active,
