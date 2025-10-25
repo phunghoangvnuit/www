@@ -3,13 +3,13 @@
 margin: 21px 0px;
 }
 .carousel-inner{
-height: 100%;
+height: 746px;
 display: flex;
 align-items: center;
 }
 .carousel-inner img{
 object-fit: cover;
-width: 100%;
+width: 140% !important;
 }
 
 /* Responsive */

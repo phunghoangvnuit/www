@@ -5,7 +5,7 @@ document.querySelectorAll('.nav-item strong').forEach(item => {
     setTimeout(() => {
       item.textContent = item.dataset.en;
       item.classList.remove('fade-out');
-    }, 98);
+    }, 70);
   });
 
   item.addEventListener('mouseleave', () => {
@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-item strong').forEach(item => {
     setTimeout(() => {
       item.textContent = item.dataset.vi;
       item.classList.remove('fade-out');
-    }, 98);
+    }, 70);
   });
 });
 
