@@ -44,6 +44,7 @@
   <link rel="stylesheet" href="./css/components/form-modal.css">
   <link rel="stylesheet" href="./css/components/footer.css">
   <link rel="stylesheet" href="./css/responsives/responsive-index.css">
+  <link rel="stylesheet" href="./css/components/main-news.css">
 </head>
 <body>
   <!-- ======= Nút Back to Top (TOP) ======= -->
@@ -65,7 +66,7 @@
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="#" class="nav-item nav-link text-center">
+                        <a href="#" class="nav-item nav-link text-center active">
                           <strong>Phùng</strong><br><i>(About me)</i>
                         </a>
                         <a href="#" class="nav-item nav-link text-center">
@@ -165,48 +166,22 @@
     <!-- Breaking News -->
       <div class="hot-news"><strong>Breaking News:</strong> <span id="news-text"></span></div>
 
-    <!-- Carousel Slideshow -->
-      <!-- Note 30/09/25: 
-        Hiện tại slideshow đang disable, chỉ để hiện thị 1 ảnh  
-        Lưu ý không xóa các comment code trong phần này, nếu khách cần 
-        update thành slideshow nhiều ảnh thì uncomment là dùng được luôn
-      -->
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators (dấu chấm bên dưới) -->
-        <!-- <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
-        </div> -->
-
-        <!-- Nội dung carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/carousel-1-travel.webp" class="d-block w-100" alt="Slide 1">
-          </div>
-          <!-- <div class="carousel-item">
-            <img src="./img/carousel-2-travel.webp" class="d-block w-100" alt="Slide 2">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/carousel-3-travel.webp" class="d-block w-100" alt="Slide 3">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/carousel-4-travel.webp" class="d-block w-100" alt="Slide 4">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/carousel-5-travel.webp" class="d-block w-100" alt="Slide 5">
-          </div> -->
-        </div>
-
-        <!-- Nút điều khiển trái/phải -->
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button> -->
+    <!-- Main news -->
+      <div class="main-news">
+        <a href="https://google.com.vn">
+          <article class="feature-main h-100">
+            <img src="./img/carousel-1-travel.webp" alt="Feature Image">
+            <div class="feature-overlay"></div>
+            <div class="feature-content">
+              <div class="d-flex gap-2 mb-2">
+                <span class="category-badge tech">TECH</span>
+                <span class="exclusive-badge">EXCLUSIVE</span>
+              </div>
+              <h3>Discover these Waterproof and Rugged Smartphones that Go on Sale</h3>
+              <p>I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively effect your body, but alchemizing...</p>
+            </div>
+          </article>
+        </a>
       </div>
 
       <!-- Danh sách bài viết dạng card (block 4 bài) -->
