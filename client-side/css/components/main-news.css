@@ -1,11 +1,13 @@
 /*Main-news*/
 .main-news{
-margin: 21px 0px;
+border-top: 21px 0px;
+padding-bottom: 11px;
+border-bottom: 1px solid lightgray;
 }
 .feature-main {
 position: relative;
 overflow: hidden;
-height: 746px !important;
+height: 798px !important;
 margin-top: 21px;
 }
 .feature-main img {

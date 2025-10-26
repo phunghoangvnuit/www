@@ -6,6 +6,12 @@ font-weight: 500;
 cursor: pointer;
 color: var(--dark) !important;
 }
+.blog-stream{
+  margin-bottom: 0 !important;
+}
+.blog-stream .container{
+  margin-bottom: 0 !important;
+}
 .block .container h5:hover{
 color: var(--primary) !important;
 }

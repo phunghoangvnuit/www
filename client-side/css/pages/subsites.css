@@ -43,6 +43,37 @@ padding: 2px 8px;
 font-size: 12px;
 }
 
+.plus-cross {
+  position: relative;
+}
+
+/* vertical line */
+.plus-cross::before,
+.plus-cross::after {
+  content: "";
+  position: absolute;
+  background: #eee; /* color of the cross */
+  z-index: 5;
+}
+
+/* vertical line through center */
+.plus-cross::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-0.5px);
+}
+
+/* horizontal line through center */
+.plus-cross::after {
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  transform: translateY(-0.5px);
+}
+
 /* ======= Mobile Search ======= */
 .mobile-search{
 display: none;
