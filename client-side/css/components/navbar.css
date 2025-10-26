@@ -32,12 +32,27 @@ margin: 0;
 padding: 10px 8px;
 font-size: 14px;
 transition: .5s;
-color: var(--dark);
+color: #666666;
 border-bottom: 3px solid var(--light);
+transition: color 0.3s ease;
 }
-.nav-item.nav-link.active {
+/* Phần sub Tiếng Anh bình thường sẽ ẩn đi */
+.nav-item.nav-link i {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
   color: var(--primary);
-  border-bottom: 3px solid;
+  display: inline-block;
+}
+/* Hiện sub Tiếng Anh khi hover */
+.nav-item.nav-link:hover i,
+.nav-item.nav-link.active i {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Đổi màu text khi tab active */
+.nav-item.nav-link.active strong {
+  color: var(--primary);
 }
 .navbar {
 height: 100px;
