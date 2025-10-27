@@ -1,11 +1,11 @@
 :root {
-  --primary: #015E53;  
-  --secondary: #000000;
-  --light: #FFFFFF;
-  --dark: #000000;
-  --primary-darker: #01433d;  
-  --primary-boder: #01433d;   
-  --primary-active: #01342f; 
+--primary: #309b65;
+--secondary: #000000;
+--light: #FFFFFF;
+--dark: #000000;
+--primary-darker: #26764d;
+--primary-boder: #26764d;
+--primary-active: #1f5c3d;
 }
 * {
 margin: 0;
