@@ -35,8 +35,12 @@ transition: .5s;
 color: #666666;
 border-bottom: 3px solid var(--light);
 transition: color 0.3s ease;
+/* width: 120px; */
 }
 /* Phần sub Tiếng Anh bình thường sẽ ẩn đi */
+.nav-item.nav-link strong {
+  text-transform: uppercase;
+}
 .nav-item.nav-link i {
   opacity: 0;
   transform: translateY(5px);
@@ -66,10 +70,10 @@ font-family: "Roboto";
 letter-spacing: 0.7px;
 }
 .navbar-nav{
-gap: 49px;
+gap: 21px;
 }
 .navbar-nav a{
-width: 120px;
+width: 140px;
 }
 .nav-item strong {
 display: inline-block;
