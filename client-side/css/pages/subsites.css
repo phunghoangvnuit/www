@@ -156,10 +156,12 @@ border: 2px solid var(--primary-darker) !important;
   margin-top: .25rem;
 }
 .get-more-post-btn{
-  width: 42%;
+  width: 49%;
   height: 49px;
   background-color: var(--light);
   border-radius: 3.5px;
+  border: solid 0.7px lightgray;
+  transition: all 0.35s ease;
 }
 .get-more-post-btn:hover{
   background-color: var(--primary);
