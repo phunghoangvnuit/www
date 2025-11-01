@@ -2,6 +2,9 @@
   .body-content-container{
     width: 85%;
   }
+  .navbar-nav a{
+    width: auto;
+  }
   .nav-left{
     width: 66% !important;
   }
@@ -22,18 +25,52 @@
     font-size: 14px !important;
   }
 
+  .hot-news{
+    font-size: 16px;
+  }
+  .hot-news strong{
+    font-size: 21px;
+  }
+
   .togglesearch{
   right: -42px;
   width: 1414px;
   }
-  
 }
 
 @media (max-width: 1600px){
+  .body-content-container{
+    width: 85%;
+  }
   .nav-left{
     width: 65% !important;
   }
+  .nav-right button{
+    font-size: 14px;
+  }
+  .nav-right .dropdown-menu li{
+    font-size: 12px;
+  }
+  /*logo*/
+  .nav-left h1{
+    font-size: 28px !important;
+  }
+  .navbar-nav{
+    gap: 30px !important;
+  }
+  .navbar-collapse a{
+    font-size: 14px !important;
+  }
+
+  .hot-news{
+    font-size: 16px;
+  }
+  .hot-news strong{
+    font-size: 21px;
+  }
+
   .togglesearch{
+  right: -42px;
   width: 1345px;
   }
 }
@@ -60,6 +97,13 @@
   }
   .navbar-collapse a{
     font-size: 12px !important;
+  }
+
+  .hot-news{
+    font-size: 14px;
+  }
+  .hot-news strong{
+    font-size: 18px;
   }
 
   .togglesearch{
@@ -92,6 +136,13 @@
     font-size: 12px !important;
   }
 
+  .hot-news{
+    font-size: 14px;
+  }
+  .hot-news strong{
+    font-size: 18px;
+  }
+
   .sidebar{
     margin-top: 48px;
   }
@@ -119,6 +170,13 @@
   }
   .navbar-collapse a{
     font-size: 12px !important;
+  }
+
+  .hot-news{
+    font-size: 14px;
+  }
+  .hot-news strong{
+    font-size: 18px;
   }
 
   .togglesearch{
@@ -151,6 +209,13 @@
     font-size: 12px !important;
   }
 
+  .hot-news{
+    font-size: 14px;
+  }
+  .hot-news strong{
+    font-size: 18px;
+  }
+
   .togglesearch{
   right: -42px;
   width: 1142px;
@@ -179,6 +244,13 @@
   }
   .navbar-collapse a{
     font-size: 12px !important;
+  }
+
+  .hot-news{
+    font-size: 14px;
+  }
+  .hot-news strong{
+    font-size: 18px;
   }
 
   .togglesearch{
@@ -211,6 +283,12 @@
     font-size: 11.5px !important;
   }
 
+  .hot-news{
+    font-size: 14px;
+  }
+  .hot-news strong{
+    font-size: 18px;
+  }
   .togglesearch{
   right: -42px;
   width: 1068px;
@@ -222,7 +300,6 @@
     width: 90%;
     margin-top: 80px;
   }
-  .body-left { display: none; }
   .mobile-search{
     display: initial;
   }
@@ -267,6 +344,14 @@
   }
   .navbar-collapse a{
     font-size: 16px !important;
+  }
+
+  .hot-news{
+    font-size: 14px;
+    height: 56px;
+  }
+  .hot-news strong{
+    font-size: 18px;
   }
 
   .body-right h1{
