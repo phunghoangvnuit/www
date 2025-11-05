@@ -6,7 +6,7 @@
     width: auto;
   }
   .nav-left{
-    width: 66% !important;
+    width: 65% !important;
   }
   .nav-right button{
     font-size: 14px;
@@ -43,7 +43,7 @@
     width: 85%;
   }
   .nav-left{
-    width: 65% !important;
+    width: 64% !important;
   }
   .nav-right button{
     font-size: 14px;
@@ -72,43 +72,6 @@
   .togglesearch{
   right: -42px;
   width: 1345px;
-  }
-}
-
-@media (max-width: 1440px){
-  .body-content-container{
-    width: 85%;
-  }
-  .nav-left{
-    width: 61.8% !important;
-  }
-  .nav-right button{
-    font-size: 13px;
-  }
-  .nav-right .dropdown-menu li{
-    font-size: 11px;
-  }
-  /*logo*/
-  .nav-left h1{
-    font-size: 24px !important;
-  }
-  .navbar-nav{
-    gap: 20px !important;
-  }
-  .navbar-collapse a{
-    font-size: 12px !important;
-  }
-
-  .hot-news{
-    font-size: 14px;
-  }
-  .hot-news strong{
-    font-size: 18px;
-  }
-
-  .togglesearch{
-  right: -42px;
-  width: 1204px;
   }
 }
 

@@ -17,8 +17,11 @@
   align-items: center;
   justify-content: center;
 }
+.content-container .body-right .content-header{
+  width: 100%;
+}
 .body-right h1{
-  width: 714px;
+  width: 80%;
   font-size: 35px;
   text-align: center;
   color: var(--dark) !important;
