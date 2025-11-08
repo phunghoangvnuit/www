@@ -1,5 +1,5 @@
 .player-container {
-    max-width: 100%;
+    width: 100%;
     margin-top: 14px;
     padding: 1px;
     border-radius: 30px;
@@ -15,10 +15,10 @@
 }
 
 .plyr--audio .plyr__controls .plyr__control{
-  background: #2e7d32;  
+  background: var(--primary);  
   color: #fff;         
   border-radius: 6px;
 }
 .plyr--audio .plyr__controls .plyr__control:hover{
-  background:#1b5e20;
+  background:var(--primary);
 }

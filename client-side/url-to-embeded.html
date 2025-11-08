@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Embed</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+    input { width: 60%; padding: 8px; font-size: 16px; }
+    button { padding: 8px 14px; margin: 5px; font-size: 16px; cursor: pointer; }
+    iframe { width: 560px; height: 315px; border: none; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <input id="youtubeUrl" type="text" placeholder="Enter YouTube URL here">
+  <button id="generateBtn">Generate</button>
+  <button id="clearBtn">Clear</button>
+
+  <div id="videoContainer"></div>
+
+  <script>
+    const input = document.getElementById('youtubeUrl');
+    const generateBtn = document.getElementById('generateBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const container = document.getElementById('videoContainer');
+
+    generateBtn.addEventListener('click', () => {
+      const url = input.value.trim();
+      if (!url) return alert('Please enter a YouTube URL');
+
+      const match = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+      if (!match) return alert('Invalid YouTube URL');
+
+      const videoId = match[1];
+      const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+
+      container.innerHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+    });
+
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      container.innerHTML = '';
+    });
+  </script>
+</body>
+</html>

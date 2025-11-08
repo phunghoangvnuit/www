@@ -29,6 +29,7 @@ padding: 0;
 margin: 0;
 }
 .navbar .navbar-nav .nav-link {
+margin-top: 21px !important;
 padding: 10px 8px;
 font-size: 14px;
 transition: .5s;
@@ -40,6 +41,7 @@ transition: color 0.3s ease;
 /* Phần sub Tiếng Anh bình thường sẽ ẩn đi */
 .nav-item.nav-link strong {
   text-transform: uppercase;
+  font-weight: 500;
 }
 .nav-item.nav-link i {
   opacity: 0;
