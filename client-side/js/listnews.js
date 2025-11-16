@@ -31,7 +31,7 @@
             <h2 class="h4 post-title">
               <a class="link-dark text-decoration-none" href="${p.url}">${p.title}</a>
             </h2>
-            <div class="post-meta">${p.category} · <a href="#" class="link-secondary text-decoration-none">${p.author}</a> – ${p.date}</div>
+            <div class="post-meta">${p.category} · <a href="#" class="link-secondary text-decoration-none">${p.author}</a> – <i class="fa-regular fa-clock"></i> ${p.date}</div>
             <p class="mt-2 mb-0 text-secondary">${p.excerpt}</p>
           </div>
         </div>
