@@ -75,8 +75,8 @@
   top: 180px;
 }
 .sharing-icon a{
-  width: 42px;
-  height: 42px;
+  width: 35px;
+  height: 35px;
   border-radius: 25px;
   border-color: var(--primary) !important;
   display: flex;
