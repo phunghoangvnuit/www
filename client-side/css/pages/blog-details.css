@@ -22,16 +22,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 .body-right h1{
-  width: 80%;
+  width: 100%;
   font-size: 35px;
-  text-align: center;
+  text-align: left;
   color: var(--dark) !important;
+  font-family: "Fjalla One";
+  font-weight: 500;
 }
 .body-right .content-info{
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   margin: 0;
 }
