@@ -35,6 +35,8 @@
 .body-right .content-info{
   text-align: left;
   font-size: 16px;
+  font-style: italic;
+  color: rgba(126, 126, 126, 0.56);
   margin: 0;
 }
 .body-right .content-body{

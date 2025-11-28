@@ -19,7 +19,7 @@ aspect-ratio: 16/10;
 .feature-overlay {
 position: absolute;
 inset: 0;
-background: linear-gradient(180deg, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.75) 90%);
+background: linear-gradient(180deg, rgba(0,0,0,0.05) 10%, rgba(0,0,0,0.63) 99%);
 }
 .feature-content {
 position: absolute;
