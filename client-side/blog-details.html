@@ -49,6 +49,7 @@
   <link rel="stylesheet" href="./css/components/sidebar.css">
   <link rel="stylesheet" href="./css/components/blog-card.css">
   <link rel="Stylesheet" href="./css/components/blog-stream.css">
+  <link rel="stylesheet" href="./css/components/form-modal.css">
   <link rel="stylesheet" href="./css/components/comment.css">
   <link rel="stylesheet" href="./css/components/footer.css">
   <link rel="stylesheet" href="./css/responsives/responsive-blog-details.css">
@@ -302,6 +303,28 @@
           </div>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) ======= -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-100 mx-auto d-flex">
+                      <form action="" class="">
+                          <input type="text" class="w-100 form-control border-1 py-3 mb-4 inputform" placeholder="Họ và tên">
+                          <input type="email" class="w-100 form-control border-1 py-3 mb-4 inputform" placeholder="Email của bạn">
+                          <textarea class="w-100 form-control border-1 mb-4 inputform" rows="5" cols="10" placeholder="Lời nhắn cho NhungPhung"></textarea>
+                          <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary inputform" type="submit">Submit</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 
