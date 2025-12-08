@@ -2,21 +2,21 @@
 #formModal .modal-content {
 background: rgba(255, 255, 255, .8);
 }
-.modal-body{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+#formModal .modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.input-group{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.inputform {
-width: 500px !important;
+#formModal .contact-form .form-control,
+#formModal .contact-form button[type="submit"] {
+  width: 100%;
 }
 #formModal .border-secondary {
 border-color: var(--primary) !important;
+}
+
+/* Responsive */
+#formModal .contact-form {
+  width: min(500px, 100vw - 3rem);  /* Lưu ý: max 500px, trên mobile thì ~100% */
 }
