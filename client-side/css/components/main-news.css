@@ -22,12 +22,15 @@ inset: 0;
 background: linear-gradient(180deg, rgba(0,0,0,0.05) 10%, rgba(0,0,0,0.63) 99%);
 }
 .feature-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
 position: absolute;
 bottom: 1.5rem;
 left: 1.5rem;
 right: 1.5rem;
 color: #fff;
-width: 95%;
 }
 .feature-content .badge {
 background: var(--primary);
