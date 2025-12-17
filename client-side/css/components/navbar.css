@@ -91,6 +91,48 @@ opacity: 0;
 .fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
 color: var(--primary);
 }
+
+/*
+Note: (17/12/25 - phunghoangvnuit)
+  Các config phía dưới dùng để đưa config hiệu ứng màu sắc 
+  cho 2 dropdown menu button trên giao diện điện thoại
+*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+.language-selector .dropdown-toggle {
+    border: 1px solid #d0d0d0;   /* pick your color */
+    background-color: #fff;
+}
+.language-selector .dropdown-toggle:hover {
+    border-color: #d0d0d0;
+    background-color: #fff;
+}
+.language-selector .dropdown-toggle:focus,
+.language-selector .dropdown-toggle:active,
+.language-selector .dropdown-toggle:focus-visible {
+    border-color: #d0d0d0;
+    outline: none;
+    box-shadow: none;
+}
+/*
+Note: (17/12/25 - phunghoangvnuit)
+  2 Config phía dưới dùng để ép width của dropdown item 
+  trong menu ngôn ngữ trên giao diện điện thoại
+*/
+.language-selector .dropdown-menu {
+    min-width: 100%;
+    width: 100%;
+}
+.language-selector .dropdown-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .navbar .dropdown-toggle::after {
 border: none;
 content: "\f107";
@@ -121,8 +163,8 @@ border: 0;
 
 /* ======= Menu Chọn Ngôn Ngữ ======= */
 .language-selector{
-border: solid 1px var(--primary) !important;
-border-radius: 7px;
+/* border: solid 1px var(--primary) !important; */
+/* border-radius: 7px; */
 }
 .language-selector button{
 color: var(--primary) !important;

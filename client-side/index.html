@@ -119,9 +119,17 @@
           <nav>
             <!-- Logo -->
             <a href="index.html" class="navbar-brand" style="margin: 0; padding: 0;"><h1 class="display-6">NhungPhung</h1></a>      
-            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 1px">
-              <div style="object-fit: cover; width: 35px; height: 25px;";><img src="https://flagcdn.com/w40/vn.png" style="width: 27px; height: 17px;"></div>
-              <div style="object-fit: cover; width: 35px; height: 25px;";><img src="https://flagcdn.com/w40/us.png" style="width: 27px; height: 17px;"></div>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 7px">
+              <!-- Menu thay đổi ngôn ngữ -->
+              <div class="dropdown language-selector">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-globe"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><div style="object-fit: cover; width: 35px; height: 25px;";><img src="https://flagcdn.com/w40/vn.png" style="width: 27px; height: 17px;"></div></a></li>
+                  <li><a class="dropdown-item" href="#"><div style="object-fit: cover; width: 35px; height: 25px;";><img src="https://flagcdn.com/w40/us.png" style="width: 27px; height: 17px;"></div></a></li>
+                </ul>
+              </div>
               <!-- Button xổ xuống - active trên màn hình nhỏ -->
               <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                   <span class="fa fa-bars text-primary"></span>
@@ -343,8 +351,8 @@
         </div>
     </aside>
 
-    <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) ======= -->
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) - PHIÊN BẢN CŨ ======= -->
+    <!-- <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -359,6 +367,42 @@
                       <button class="btn form-control border-secondary py-3 bg-white text-primary" type="submit">Submit</button>
                     </form>
                   </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) - PHIÊN BẢN MỚI ======= -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="w-100 d-flex">
+                      <form id="contactForm" novalidate>
+                          <label>Họ và tên/Name</label>
+                          <input id="fullName" type="text" class="form-control" placeholder="Họ và tên" required>
+
+                          <label>Email của bạn/Your email</label>
+                          <input id="email" type="email" class="form-control" placeholder="Email của bạn" required>
+
+                          <label>Số điện thoại/Phone</label>
+                          <input id="phone" type="text" class="form-control" placeholder="Số điện thoại" required>
+
+                          <label>Chủ đề/Subject</label>
+                          <input id="subject" type="text" class="form-control" placeholder="Chủ đề" required>
+
+                          <label>Lời nhắn cho Nhung/Message</label>
+                          <textarea id="message" class="form-control" rows="5" placeholder="Lời nhắn cho NhungPhung" required></textarea>
+
+                          <button type="submit"
+                              class="w-100 btn form-control border-secondary py-3 bg-white text-primary">
+                              Submit
+                          </button>
+                      </form>
+                    </div>
                 </div>
             </div>
         </div>
