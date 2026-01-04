@@ -33,4 +33,9 @@ border: var(--primary) !important;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .card img{
+    height: 200px;
+    border-radius: 0 !important;
+    object-fit: cover;
+  }
 }
