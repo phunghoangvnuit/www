@@ -263,8 +263,17 @@
     width: 90%;
     margin-top: 80px;
   }
+  .feature-main {
+  position: relative;
+  overflow: hidden;
+  height: 400px !important;
+  margin-top: 21px;
+  }
   .mobile-search{
     display: initial;
+  }
+  .mobile-sidebar{
+    display: initial !important;
   }
   .pc-nav{
     display: none;

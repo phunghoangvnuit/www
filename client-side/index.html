@@ -43,8 +43,8 @@
   <link rel="Stylesheet" href="./css/components/blog-stream.css">
   <link rel="stylesheet" href="./css/components/form-modal.css">
   <link rel="stylesheet" href="./css/components/footer.css">
-  <link rel="stylesheet" href="./css/responsives/responsive-index.css">
   <link rel="stylesheet" href="./css/components/main-news.css">
+  <link rel="stylesheet" href="./css/responsives/responsive-index.css">
 </head>
 <body>
   <!-- ======= Nút Back to Top (TOP) ======= -->
@@ -304,6 +304,29 @@
           </div>
         </div>    
       </div>
+
+      <!-- Sidebar Mobile (block 3 bài) -->
+      <div class="block blog-card mobile-sidebar">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="./img/food-1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fashion Finder: Biggest Shows, Parties</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 100%;">
+          <iframe width="100%" height="400px" src="https://www.youtube.com/embed/sOxloXyOAKA?rel=0&modestbranding=1&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title">Fashion Finder: Biggest Shows, Parties</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="./img/food-4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fashion Finder: Biggest Shows, Parties</h5>
+          </div>
+        </div>      
+      </div>
+
     </div>
 
     <!-- ======= Phần thanh bên ======= -->
@@ -352,7 +375,7 @@
     </aside>
 
     <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) - PHIÊN BẢN CŨ ======= -->
-    <!-- <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -370,10 +393,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- ======= Phần hộp thoại hợp tác (hiện ra khi nhấp hợp tác) - PHIÊN BẢN MỚI ======= -->
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -406,7 +429,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
   </div>
 
   <!-- ======= Phần Chân trang ======= -->
@@ -414,16 +438,15 @@
     <!-- Footer-Top: Khối trên Bao gồm 4 cột -->
     <div class="footer-top row">
 
-      <!-- Cột 1: Follow us (Breeze) -> Theo dõi -->
-      <div class="col-12 col-lg-3 footer-top-column social-contacts">
-        <h3 class="footer-title">Theo dõi</h3>
+      <!-- Cột 1: Popular news (Breeze) -> Tin Hot -->
+      <div class="col-12 col-lg-3 footer-top-column popular-news">
+        <h3 class="footer-title">Tin Hot</h3>
         <hr/>
-        <ul class="list-unstyled">
-          <a href="https://www.facebook.com/nhungphungblog" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/nhung_phung_official"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/@NhungPhungBlog"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.tiktok.com/@nhungphung_official"><i class="fa-brands fa-tiktok"></i></a>
-        </ul>
+        <div class="news-items">
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
+        </div>
       </div>
 
       <!-- Cột 2: Company (Breeze) -> Menu -->
@@ -440,7 +463,19 @@
         </ul>
       </div>
 
-      <!-- Cột 3: Latest news (Breeze) -> Collab -->
+      <!-- Cột 3: Follow us (Breeze) -> Theo dõi -->
+      <div class="col-12 col-lg-3 footer-top-column social-contacts">
+        <h3 class="footer-title">Theo dõi</h3>
+        <hr/>
+        <ul class="list-unstyled">
+          <a href="https://www.facebook.com/nhungphungblog" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nhung_phung_official"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@NhungPhungBlog"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@nhungphung_official"><i class="fa-brands fa-tiktok"></i></a>
+        </ul>
+      </div>
+
+      <!-- Cột 4: Latest news (Breeze) -> Collab -->
       <div class="col-12 col-lg-3 footer-top-column collab">
         <h3 class="footer-title">Hợp tác</h3>
         <hr/>
@@ -451,16 +486,6 @@
         </div>
       </div>
 
-      <!-- Cột 4: Popular news (Breeze) -> Tin Hot -->
-      <div class="col-12 col-lg-3 footer-top-column popular-news">
-        <h3 class="footer-title">Tin Hot</h3>
-        <hr/>
-        <div class="news-items">
-            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-            <a href="#" class="d-block"><span class="badge text-bg-success">EXCLUSIVE</span>Computers Climb the List of the Top Gadgets in Forbes Magazine</a>
-        </div>
-      </div>
     </div>
 
     <!-- Footer-Mid: Khối giữa bao gồm logo + menu điều hướng phụ -->
