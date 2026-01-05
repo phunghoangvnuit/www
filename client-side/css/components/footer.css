@@ -12,6 +12,12 @@ color: #000;
 border-top: 1px solid #eaeaea;
 width: 100%;
 }
+.footer-pc{
+    display: initial !important;
+}    
+.footer-mobile{
+    display: none !important;
+}
 .footer .footer-title{
 font-family: "EB Garamond";
 font-weight: 700;
@@ -148,6 +154,15 @@ text-align: center;
 }
 
 /* Responsive */
+@media (max-width: 1152px) {
+    .footer-pc{
+        display: none !important;
+    }    
+    .footer-mobile{
+        display: initial !important;
+    }
+}
+
 @media (max-width: 1000px){
 .footer-top-column{
 border: none;
@@ -162,4 +177,5 @@ display: flex;
 flex-direction: row;
 }
 }
+
 
